@@ -1,0 +1,14 @@
+baseurl = "http://pangpanglabs.github.io/"
+title = "PangPang Labs"
+languageCode = "en-us"
+
+[params]
+  # Prefix URL to edit current page. Useful to give opportunity to people to create merge request for your doc.
+  # See the config.toml file from this documentation site to have an example.
+  editURL = ""
+  # Author of the site, will be used in meta information
+  author = ""
+  # Description of the site, will be used in meta information
+  description = ""
+  # Shows a checkmark for visited pages on the menu. Default to false
+  showVisitedLinks = false
