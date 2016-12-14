@@ -1,5 +1,4 @@
 +++
-draft = true
 title = "API Description"
 chapter = true
 weight = 0
