@@ -1,6 +1,5 @@
 +++
 title = "Android"
-date = "2016-12-12T09:46:02+08:00"
 weight = 1
 +++
 
@@ -32,9 +31,7 @@ String result = Pos.call("pp:///account/login?username=username&password=passwor
 
 > ### Setting
 >
-> #### Download `pos.aar` file
->
-> http://possdk.oss-cn-hangzhou.aliyuncs.com/pos.aar
+> #### Download {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
 >
 > #### In Project Structure
 > 

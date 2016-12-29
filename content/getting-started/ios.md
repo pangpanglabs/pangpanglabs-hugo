@@ -43,9 +43,9 @@ NSString* result = P2PosCall(@"pp:///account/login?username=username&password=pa
 
 > ### Setting
 > 
-> 1. Download `Pos.framework.zip` and extract.  
->    http://possdk.oss-cn-hangzhou.aliyuncs.com/Pos.framework.zip
-> 2. Drag and Drop `Pos.framework` file
-> 3. in `Project`->`Target`->`Build Settings`  
+> 1. Download {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
+> 2. Extract.
+> 3. Drag and Drop `Pos.framework` file
+> 4. in `Project`->`Target`->`Build Settings`  
 >    Search `Enable Bitcode`  
 >    set `NO`
