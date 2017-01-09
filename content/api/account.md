@@ -55,6 +55,7 @@ Fail:
 ```
 {
   "success": false,
+  "result": null,
   "error": {
     "code": 201,
     "message": "Login Failed. Invalid user name or password"
@@ -112,6 +113,7 @@ Fail:
 ```
 {
   "success": false,
+  "result": null,
   "error": {
     "code": 202,
     "message": "Cannot get current user."

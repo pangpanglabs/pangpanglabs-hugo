@@ -15,7 +15,7 @@ toc = true
 |Name|Required|Type|
 |---|---|---|
 |cartId|Yes|number|
-|info|No|string(json)|
+|info|No|url-encoded json string|
 
 #### Example
 

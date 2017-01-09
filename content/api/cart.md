@@ -44,6 +44,7 @@ Fail:
 ```
 {
   "success": false,
+  "result": null,
   "error": {
     "code": 404,
     "message": "Cannot create cart."
@@ -107,6 +108,7 @@ Fail:
 ```
 {
   "success": false,
+  "result": null,
   "error": {
     "code": 401,
     "message": "Cannot add item to current cart.\nCannot find product for 'skuId:12'"
@@ -170,6 +172,7 @@ Fail:
 ```
 {
   "success": false,
+  "result": null,
   "error": {
     "code": 402,
     "message": "Cannot remove item from current cart.\nCannot find item for 'skuId:12' in current cart\n"
@@ -211,6 +214,7 @@ Fail:
 ```
 {
   "success": false,
+  "result": null,
   "error": {
     "code": 405,
     "message": "Cannot remove current cart."
