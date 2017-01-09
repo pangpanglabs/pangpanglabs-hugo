@@ -1,5 +1,5 @@
 +++
-title = "Overview"
+title = "Introduction"
 chapter = true
 weight = 0
 icon = "<b>1. </b>"
@@ -11,15 +11,21 @@ icon = "<b>1. </b>"
 **Cloud-based**  
 **Work offline**
 
-<br />  
+![PangPang POS](/images/pos.png)
 
 ## Features
 
-- [x] Products management
-- [ ] Sales analytics
-- [ ] Offering
-- [ ] Loyalty program
-- [ ] Reselling & Online delivery
+- [x] Shopping cart
+- [ ] Reselling & Online delivery *(~ 2017.01.31)*
+- [ ] Promotion & Membership *(~ 2017.02.28)*
+- [ ] Sales statistics *(~ 2017.03.31)*
+<!--- [ ] Legacy Interface *(~ 2017.01.15)*-->
+
+## Not Supported
+
+- User Interface
+- Payment
+- Push & Notification
 
 ## Downloads
 

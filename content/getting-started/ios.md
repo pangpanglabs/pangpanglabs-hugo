@@ -18,7 +18,7 @@ P2PosInit(path)
 
 3. Call API
 ```
-let result = P2PosCall("pp:///account/login?username=username&password=password")
+let result = P2PosCall("pp:///v1/account/login?tenant=LABS&username=salesman&password=1234")
 ```
 
 ### Objective-C
@@ -38,7 +38,7 @@ P2PosInit(path);
 
 3. Call API
 ```
-NSString* result = P2PosCall(@"pp:///account/login?username=username&password=password");
+NSString* result = P2PosCall(@"pp:///v1/account/login?tenant=LABS&username=salesman&password=1234");
 ```
 
 > ### Setting

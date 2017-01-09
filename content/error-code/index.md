@@ -1,8 +1,10 @@
 +++
 title = "Error Code Description"
-weight = 100
+weight = 0
+icon = "<b>5. </b>"
 toc = true
 +++
+
 
 ## System
 

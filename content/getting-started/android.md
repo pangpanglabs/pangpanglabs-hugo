@@ -26,7 +26,7 @@ Pos.init(path);
 
 4. Call API
 ```
-String result = Pos.call("pp:///account/login?username=username&password=password");
+String result = Pos.call("pp:///v1/account/login?tenant=LABS&username=salesman&password=1234");
 ```
 
 > ### Setting

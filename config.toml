@@ -12,4 +12,4 @@ languageCode = "en-us"
   description = ""
   # Shows a checkmark for visited pages on the menu. Default to false
   showVisitedLinks = false
-  menu = [ "overview", "getting-started", "api" ]
+  menu = [ "introduction", "getting-started", "api", "usecase", "error-code" ]

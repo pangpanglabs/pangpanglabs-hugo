@@ -1,8 +1,10 @@
 +++
 title = "Global Settings"
-weight = 1
+weight = 0
+icon = "<b>6. </b>"
 toc = true
 +++
+
 
 ## System
 
