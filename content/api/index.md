@@ -82,6 +82,15 @@ The features are described in child pages.
 - [Cart](/api/cart)
 - [Order](/api/order)
 
+PosSDK use custom uri format like this.
+```
+pp://production/account/login?tenant=LABS&username=salesman&password=1234
+```
+
+- scheme: `pp`
+- host: `staging` or `production`
+- path: api endpoint
+- query: parameters
 
 This is json response format. All json data should have 3 properties - `success`, `result`, `error`.
 ```
@@ -97,7 +106,7 @@ You can call SDK features like this:
 #### Android
 
 ```
-String result = Pos.call("pp:///v1/account/login?tenant=LABS&username=salesman&password=1234");
+String result = Pos.call("pp://staging/account/login?tenant=LABS&username=salesman&password=1234");
 ```
 
 #### iOS
@@ -105,11 +114,11 @@ String result = Pos.call("pp:///v1/account/login?tenant=LABS&username=salesman&p
 ##### Swift
 
 ```
-let result = P2PosCall("pp:///v1/account/login?tenant=LABS&username=salesman&password=1234")
+let result = P2PosCall("pp://staging/account/login?tenant=LABS&username=salesman&password=1234")
 ```
 
 ##### Objective-C
 
 ```
-NSString* result = P2PosCall(@"pp:///v1/account/login?tenant=LABS&username=salesman&password=1234");
+NSString* result = P2PosCall(@"pp://staging/account/login?tenant=LABS&username=salesman&password=1234");
 ```

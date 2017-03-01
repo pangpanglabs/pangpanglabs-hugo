@@ -6,7 +6,7 @@ toc = true
 
 ## Get current user
 
-`/v1/context/user`
+`/context/user`
 
 #### Parameters
 
@@ -16,30 +16,46 @@ None
 
 Request:
 
-`pp:///v1/context/user`
+`pp://staging/context/user`
 
 Success:
 
 ```
 {
-  "result": {    
+  "result": {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJQb3MiLCJleHAiOjE0ODg2NDA0MTMsImh0dHA6Ly93d3cuYXNwbmV0Ym9pbGVycGxhdGUuY29tL2lkZW50aXR5L2NsYWltcy90ZW5hbnRJZCI6IjEiLCJpc3MiOiJMQUJTIiwibmFtZWlkIjoiMSIsIm5iZiI6MTQ4ODM4MTIxMywicm9sZSI6IlNhbGVzbWFuLE1hbmFnZXIiLCJzcG90aWQiOiIyIiwidW5pcXVlX25hbWUiOiJzYWxlc21hbiJ9.02OrMulHTrwrwO_2-uDoQUhg1Ur31VRYcihurq5Id-0",
     "userId": 1,
     "userName": "salesman",
-    "roles": [
-      {
-        "name": "Salesman"
-      }
-    ],
     "tenantId": 1,
     "tenantCode": "LABS",
     "tenantName": "Labs",
     "spots": [
       {
         "id": 1,
-        "code": "AC3E",
-        "name": "天山店"
+        "name": "天山店",
+        "brands": [
+          {
+            "code": "WA",
+            "name": "Paw in Paw"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "上海正大广场",
+        "brands": [
+          {
+            "code": "EK",
+            "name": "Eland Kids"
+          }
+        ]
       }
-    ]
+    ],
+    "roles": [
+      "Salesman",
+      "Manager"
+    ],
+    "currentSpotId": 2
   },
   "success": true,
   "error": {}
@@ -61,9 +77,9 @@ Fail:
 ---
 
 
-## Get system settings
+## Get system information
 
-`/v1/context/settings`
+`/context/settings`
 
 #### Parameters
 
@@ -73,23 +89,25 @@ None
 
 Request:
 
-`pp:///v1/context/settings`
+`pp://staging/context/system`
 
 Success:
 
 ```
 {
   "result": {
-    "tenantId": 1,
-    "system": {
-      "allowOffline": true,
-      "traceInterval": 10
+    "setting": {
+      "system": {
+        "allowOffline": true,
+        "traceInterval": 10
+      },
+      "price": {
+        "roundDigit": 2,
+        "roundStrategy": "round",
+        "currency": "CYN"
+      }
     },
-    "price": {
-      "roundDigit": 2,
-      "roundStrategy": "round",
-      "currency": "CYN"
-    }
+    "version": "0.0.2"
   },
   "success": true,
   "error": {}

@@ -16,9 +16,9 @@ icon = "<b>1. </b>"
 ## Features
 
 - [x] Shopping cart
-- [ ] Reselling & Online delivery *(~ 2017.01.31)*
-- [ ] Promotion & Membership *(~ 2017.02.28)*
-- [ ] Sales statistics *(~ 2017.03.31)*
+- [x] Promotion & Membership *(~ 2017.02.28)*
+- [ ] Sales statistics *(~ 2017.03.15)*
+- [ ] Reselling & Online delivery *(~ 2017.03.31)*
 <!--- [ ] Legacy Interface *(~ 2017.01.15)*-->
 
 ## Not Supported
