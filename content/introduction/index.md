@@ -29,11 +29,19 @@ icon = "<b>1. </b>"
 
 ## Downloads
 
-- Android SDK  
-  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
-- iOS SDK  
-  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
+### Current(v0.0.3)
 
+- Android SDK  
+  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.3/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
+- iOS SDK  
+  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.3/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
+
+### v0.0.2
+
+- Android SDK  
+  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.2/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
+- iOS SDK  
+  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.2/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
 
 
 <!--### Inventory management

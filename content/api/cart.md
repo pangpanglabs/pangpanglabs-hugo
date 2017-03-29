@@ -24,19 +24,23 @@ Success:
 ```
 {
   "result": {
-    "id": 1,
+    "id": 326,
+    "tenantId": 10,
     "items": null,
     "listPrice": 0,
     "salePrice": 0,
     "quantity": 0,
     "discount": 0,
+    "remainAmount": 0,
     "customerInfo": null,
     "couponNo": "",
     "info": null,
-    "userId": 1,
-    "spotId": 2,
-    "createdAt": "2017-03-01T15:28:49.136503665Z",
-    "updatedAt": "2017-03-01T15:28:49.136503665Z"
+    "discountInfo": null,
+    "payments": null,
+    "userId": 1000001,
+    "spotId": 2000001,
+    "createdAt": "2017-03-29T07:47:02.773134948Z",
+    "updatedAt": "0001-01-01T00:00:00Z"
   },
   "success": true,
   "error": {}
@@ -75,39 +79,73 @@ Fail:
 
 Request: 
 
-`pp://staging/cart/add-item?cartId=1&uid=305228&quantity=2`
+`pp://staging/cart/add-item?cartId=326&skuId=169&quantity=2`
 
 Success:
 ```
 {
   "result": {
-    "id": 1,
+    "id": 326,
+    "tenantId": 10,
     "items": [
       {
-        "uid": "305228",
-        "name": "EKJP6CV102, (59)Navy, (135)135",
-        "skuCode": "EKJP6CV10259135",
-        "contentCode": "EKJP6CV102",
-        "brandCode": "EK",
-        "unitListPrice": 450,
-        "unitSalePrice": 450,
+        "sku": {
+          "id": 169,
+          "contentId": 10,
+          "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
+          "code": "42AB600-1",
+          "listPrice": 69.5,
+          "salePrice": 69.5,
+          "brandCode": "Calvin Klein",
+          "contentCode": "42AB600",
+          "images": {
+            "large": {
+              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+              "width": 385,
+              "height": 500
+            },
+            "medium": {
+              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+              "width": 123,
+              "height": 160
+            },
+            "small": {
+              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+              "width": 58,
+              "height": 75
+            }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "26"
+            },
+            {
+              "k": "Color",
+              "v": "Monument"
+            }
+          ]
+        },
         "quantity": 2,
-        "listPrice": 900,
-        "salePrice": 900,
+        "listPrice": 139,
+        "salePrice": 139,
         "discount": 0
       }
     ],
-    "listPrice": 900,
-    "salePrice": 900,
+    "listPrice": 139,
+    "salePrice": 139,
     "quantity": 2,
     "discount": 0,
+    "remainAmount": 139,
     "customerInfo": null,
     "couponNo": "",
     "info": null,
-    "userId": 1,
-    "spotId": 2,
-    "createdAt": "2017-03-01T15:28:49Z",
-    "updatedAt": "2017-03-01T15:33:36.714647541Z"
+    "discountInfo": null,
+    "payments": null,
+    "userId": 1000001,
+    "spotId": 2000001,
+    "createdAt": "2017-03-29T07:47:02Z",
+    "updatedAt": "2017-03-29T07:47:54.783140997Z"
   },
   "success": true,
   "error": {}
@@ -146,39 +184,73 @@ Fail:
 
 Request: 
 
-`pp://staging/cart/remove-item?cartId=1&uid=305228&quantity=1`
+`pp://staging/cart/remove-item?cartId=326&skuId=169&quantity=1`
 
 Success:
 ```
 {
   "result": {
-    "id": 1,
+    "id": 326,
+    "tenantId": 10,
     "items": [
       {
-        "uid": "305228",
-        "name": "EKJP6CV102, (59)Navy, (135)135",
-        "skuCode": "EKJP6CV10259135",
-        "contentCode": "EKJP6CV102",
-        "brandCode": "EK",
-        "unitListPrice": 450,
-        "unitSalePrice": 450,
+        "sku": {
+          "id": 169,
+          "contentId": 10,
+          "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
+          "code": "42AB600-1",
+          "listPrice": 69.5,
+          "salePrice": 69.5,
+          "brandCode": "Calvin Klein",
+          "contentCode": "42AB600",
+          "images": {
+            "large": {
+              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+              "width": 385,
+              "height": 500
+            },
+            "medium": {
+              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+              "width": 123,
+              "height": 160
+            },
+            "small": {
+              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+              "width": 58,
+              "height": 75
+            }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "26"
+            },
+            {
+              "k": "Color",
+              "v": "Monument"
+            }
+          ]
+        },
         "quantity": 1,
-        "listPrice": 450,
-        "salePrice": 450,
+        "listPrice": 69.5,
+        "salePrice": 69.5,
         "discount": 0
       }
     ],
-    "listPrice": 1350,
-    "salePrice": 1350,
+    "listPrice": 69.5,
+    "salePrice": 69.5,
     "quantity": 1,
     "discount": 0,
+    "remainAmount": 69.5,
     "customerInfo": null,
     "couponNo": "",
     "info": null,
-    "userId": 1,
-    "spotId": 2,
-    "createdAt": "2017-03-01T15:28:49Z",
-    "updatedAt": "2017-03-01T15:35:56.789085986Z"
+    "discountInfo": null,
+    "payments": null,
+    "userId": 1000001,
+    "spotId": 2000001,
+    "createdAt": "2017-03-29T07:47:02Z",
+    "updatedAt": "2017-03-29T07:49:29.971205281Z"
   },
   "success": true,
   "error": {}
@@ -220,49 +292,83 @@ Request:
 Success:
 ```
 {
-  "result": {
-    "id": 1,
-    "items": [
-      {
-        "uid": "305228",
-        "name": "EKJP6CV102, (59)Navy, (135)135",
-        "skuCode": "EKJP6CV10259135",
-        "contentCode": "EKJP6CV102",
-        "brandCode": "EK",
-        "unitListPrice": 450,
-        "unitSalePrice": 450,
+    "result": {
+        "id": 326,
+        "tenantId": 10,
+        "items": [
+            {
+                "sku": {
+                    "id": 169,
+                    "contentId": 10,
+                    "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
+                    "code": "42AB600-1",
+                    "listPrice": 69.5,
+                    "salePrice": 69.5,
+                    "brandCode": "Calvin Klein",
+                    "contentCode": "42AB600",
+                    "images": {
+                        "large": {
+                            "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                            "width": 385,
+                            "height": 500
+                        },
+                        "medium": {
+                            "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                            "width": 123,
+                            "height": 160
+                        },
+                        "small": {
+                            "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                            "width": 58,
+                            "height": 75
+                        }
+                    },
+                    "options": [
+                        {
+                            "k": "Size",
+                            "v": "26"
+                        },
+                        {
+                            "k": "Color",
+                            "v": "Monument"
+                        }
+                    ]
+                },
+                "quantity": 1,
+                "listPrice": 69.5,
+                "salePrice": 69.5,
+                "discount": 0
+            }
+        ],
+        "listPrice": 69.5,
+        "salePrice": 69.5,
         "quantity": 1,
-        "listPrice": 450,
-        "salePrice": 450,
-        "discount": 0
-      }
-    ],
-    "listPrice": 1350,
-    "salePrice": 1350,
-    "quantity": 1,
-    "discount": 0,
-    "customerInfo": {
-      "no": "10000000001",
-      "brandCode": "RC",
-      "mobile": "123456789021",
-      "grade": 0,
-      "cardType": "purpleCard",
-      "mileage": {
-        "currentPoints": 9000,
-        "totalEarnPoints": 10000,
-        "totalRedeemPoints": 10,
-        "totalSaleAmount": "345.0"
-      }
+        "discount": 0,
+        "remainAmount": 69.5,
+        "customerInfo": {
+            "no": "10000000001",
+            "brandCode": "RC",
+            "mobile": "123456789021",
+            "grade": 0,
+            "cardType": "purpleCard",
+            "mileage": {
+                "currentPoints": 9000,
+                "totalEarnPoints": 10000,
+                "totalRedeemPoints": 10,
+                "totalSaleAmount": "345.0"
+            }
+        },
+        "couponNo": "",
+        "info": null,
+        "discountInfo": null,
+        "payments": null,
+        "userId": 1000001,
+        "spotId": 2000001,
+        "createdAt": "2017-03-29T07:47:02Z",
+        "updatedAt": "2017-03-29T07:49:29.971205281Z"
     },
-    "couponNo": "",
-    "info": null,
-    "userId": 1,
-    "spotId": 2,
-    "createdAt": "2017-03-01T15:28:49Z",
-    "updatedAt": "2017-03-01T15:39:08.371314559Z"
-  },
-  "success": true,
-  "error": {}
+    "success": true,
+    "error": {}
 }
 ```
 
@@ -289,58 +395,110 @@ Success:
 ```
 {
   "result": {
-    "id": 1,
+    "id": 326,
+    "tenantId": 10,
     "items": [
       {
-        "uid": "305228",
-        "name": "EKJP6CV102, (59)Navy, (135)135",
-        "skuCode": "EKJP6CV10259135",
-        "contentCode": "EKJP6CV102",
-        "brandCode": "EK",
-        "unitListPrice": 450,
-        "unitSalePrice": 0,
+        "sku": {
+          "id": 169,
+          "contentId": 10,
+          "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
+          "code": "42AB600-1",
+          "listPrice": 69.5,
+          "salePrice": 69.5,
+          "brandCode": "Calvin Klein",
+          "contentCode": "42AB600",
+          "images": {
+            "large": {
+              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+              "width": 385,
+              "height": 500
+            },
+            "medium": {
+              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+              "width": 123,
+              "height": 160
+            },
+            "small": {
+              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+              "width": 58,
+              "height": 75
+            }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "26"
+            },
+            {
+              "k": "Color",
+              "v": "Monument"
+            }
+          ]
+        },
         "quantity": 1,
-        "listPrice": 450,
-        "salePrice": 450,
+        "listPrice": 69.5,
+        "salePrice": 69.5,
         "discount": 0
       },
       {
-        "uid": "1",
-        "name": "LONG DOWN JUMPER, (39)Ivory, X-SMALL",
-        "skuCode": "WHJP64T05C390XS",
-        "contentCode": "WHJP64T05C",
-        "brandCode": "WA",
-        "unitListPrice": 1290,
-        "unitSalePrice": 0,
+        "sku": {
+          "id": 2454,
+          "contentId": 445,
+          "name": "EEAA8A011, 101, 000",
+          "code": "EEAA8A011101000",
+          "listPrice": 28,
+          "salePrice": 28,
+          "brandCode": "EE",
+          "contentCode": "EEAA8A011",
+          "images": null,
+          "options": [
+            {
+              "k": "Size",
+              "v": "(000)生产代表尺寸"
+            },
+            {
+              "k": "Color",
+              "v": "(101)red"
+            }
+          ]
+        },
         "quantity": 2,
-        "listPrice": 2580,
-        "salePrice": 1806,
-        "discount": 774
+        "listPrice": 56,
+        "salePrice": 44.8,
+        "discount": 11.2
       }
     ],
-    "listPrice": 4380,
-    "salePrice": 2256,
+    "listPrice": 125.5,
+    "salePrice": 114.3,
     "quantity": 3,
-    "discount": 774,
+    "discount": 11.2,
+    "remainAmount": 114.3,
     "customerInfo": {
-      "no": "10000000001",
-      "brandCode": "RC",
-      "mobile": "123456789021",
-      "grade": 0,
-      "cardType": "purpleCard",
-      "mileage": {
-        "currentPoints": 9000,
-        "totalEarnPoints": 10000,
-        "totalRedeemPoints": 10,
-        "totalSaleAmount": "345.0"
-      }
+        "no": "10000000001",
+        "brandCode": "RC",
+        "mobile": "123456789021",
+        "grade": 0,
+        "cardType": "purpleCard",
+        "mileage": {
+            "currentPoints": 9000,
+            "totalEarnPoints": 10000,
+            "totalRedeemPoints": 10,
+            "totalSaleAmount": "345.0"
+        }
     },
-    "couponNo": "WA976CE9199756D5BC",
-    "info": null,
-    "userId": 1,
-    "spotId": 2,
-    "createdAt": "2017-03-01T15:28:49Z",
-    "updatedAt": "2017-03-01T15:43:27.347863336Z"
+    "couponNo": "EE4E52FEF46F7B30DE",    
+    "discountInfo": {
+      "couponType": "Discount",
+      "discountName": "8折优惠",
+      "eventId": "EE2017030024"
+    },
+    "info": {},
+    "payments": null,
+    "userId": 1000001,
+    "spotId": 2000001,
+    "createdAt": "2017-03-29T07:47:02Z",
+    "updatedAt": "2017-03-29T08:12:44.017761577Z"
   },
   "success": true,
   "error": {}
@@ -364,70 +522,119 @@ Success:
 
 Request: 
 
-`pp://staging/cart/set-info?cartId=1&payment[alipay]=150&payment[wxpay]=30&receipt=193018485875930103`
+`pp://staging/cart/set-info?cartId=326&receipt=193018485875930103&casher=nancy`
 
 Success:
 ```
 {
   "result": {
-    "id": 1,
+    "id": 326,
+    "tenantId": 10,
     "items": [
       {
-        "uid": "305228",
-        "name": "EKJP6CV102, (59)Navy, (135)135",
-        "skuCode": "EKJP6CV10259135",
-        "contentCode": "EKJP6CV102",
-        "brandCode": "EK",
-        "unitListPrice": 450,
-        "unitSalePrice": 450,
+        "sku": {
+          "id": 169,
+          "contentId": 10,
+          "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
+          "code": "42AB600-1",
+          "listPrice": 69.5,
+          "salePrice": 69.5,
+          "brandCode": "Calvin Klein",
+          "contentCode": "42AB600",
+          "images": {
+            "large": {
+              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+              "width": 385,
+              "height": 500
+            },
+            "medium": {
+              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+              "width": 123,
+              "height": 160
+            },
+            "small": {
+              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+              "width": 58,
+              "height": 75
+            }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "26"
+            },
+            {
+              "k": "Color",
+              "v": "Monument"
+            }
+          ]
+        },
         "quantity": 1,
-        "listPrice": 450,
-        "salePrice": 450,
+        "listPrice": 69.5,
+        "salePrice": 69.5,
         "discount": 0
       },
       {
-        "uid": "1",
-        "name": "LONG DOWN JUMPER, (39)Ivory, X-SMALL",
-        "skuCode": "WHJP64T05C390XS",
-        "contentCode": "WHJP64T05C",
-        "brandCode": "WA",
-        "unitListPrice": 1290,
-        "unitSalePrice": 1290,
+        "sku": {
+          "id": 2454,
+          "contentId": 445,
+          "name": "EEAA8A011, 101, 000",
+          "code": "EEAA8A011101000",
+          "listPrice": 28,
+          "salePrice": 28,
+          "brandCode": "EE",
+          "contentCode": "EEAA8A011",
+          "images": null,
+          "options": [
+            {
+              "k": "Size",
+              "v": "(000)生产代表尺寸"
+            },
+            {
+              "k": "Color",
+              "v": "(101)red"
+            }
+          ]
+        },
         "quantity": 2,
-        "listPrice": 2580,
-        "salePrice": 2580,
-        "discount": 774
+        "listPrice": 56,
+        "salePrice": 44.8,
+        "discount": 11.2
       }
     ],
-    "listPrice": 7410,
-    "salePrice": 5286,
+    "listPrice": 125.5,
+    "salePrice": 114.3,
     "quantity": 3,
-    "discount": 2124,
+    "discount": 11.2,
+    "remainAmount": 114.3,
     "customerInfo": {
-      "no": "10000000001",
-      "brandCode": "RC",
-      "mobile": "123456789021",
-      "grade": 0,
-      "cardType": "purpleCard",
-      "mileage": {
-        "currentPoints": 9000,
-        "totalEarnPoints": 10000,
-        "totalRedeemPoints": 10,
-        "totalSaleAmount": "345.0"
-      }
+        "no": "10000000001",
+        "brandCode": "RC",
+        "mobile": "123456789021",
+        "grade": 0,
+        "cardType": "purpleCard",
+        "mileage": {
+            "currentPoints": 9000,
+            "totalEarnPoints": 10000,
+            "totalRedeemPoints": 10,
+            "totalSaleAmount": "345.0"
+        }
     },
-    "couponNo": "WA976CE9199756D5BC",
+    "couponNo": "EE4E52FEF46F7B30DE",    
+    "discountInfo": {
+      "couponType": "Discount",
+      "discountName": "8折优惠",
+      "eventId": "EE2017030024"
+    },
     "info": {
-      "payment": {
-        "alipay": "150",
-        "wxpay": "30"
-      },
-      "receipt": "193018485875930103"
+        "casher": "nancy",
+        "receipt": "193018485875930103"
     },
-    "userId": 1,
-    "spotId": 2,
-    "createdAt": "2017-03-01T15:28:49Z",
-    "updatedAt": "2017-03-01T15:44:48.496016435Z"
+    "payments": null,
+    "userId": 1000001,
+    "spotId": 2000001,
+    "createdAt": "2017-03-29T07:47:02Z",
+    "updatedAt": "2017-03-29T08:12:44.017761577Z"
   },
   "success": true,
   "error": {}
@@ -449,7 +656,7 @@ Success:
 
 Request: 
 
-`pp://staging/cart/remove-cart`
+`pp://staging/cart/remove-cart?cartId=326`
 
 Success:
 ```
@@ -495,50 +702,41 @@ Success:
 {
   "result": [
     {
-      "id": 1,
-      "listPrice": 4380,
-      "salePrice": 2256,
+      "id": 326,
+      "tenantId": 10,    
+      "listPrice": 125.5,
+      "salePrice": 114.3,
       "quantity": 3,
-      "discount": 774,
+      "discount": 11.2,
+      "remainAmount": 114.3,
       "customerInfo": {
-        "no": "10000000001",
-        "brandCode": "RC",
-        "mobile": "123456789021",
-        "grade": 0,
-        "cardType": "purpleCard",
-        "mileage": {
-          "currentPoints": 9000,
-          "totalEarnPoints": 10000,
-          "totalRedeemPoints": 10,
-          "totalSaleAmount": "345.0"
-        }
+          "no": "10000000001",
+          "brandCode": "RC",
+          "mobile": "123456789021",
+          "grade": 0,
+          "cardType": "purpleCard",
+          "mileage": {
+              "currentPoints": 9000,
+              "totalEarnPoints": 10000,
+              "totalRedeemPoints": 10,
+              "totalSaleAmount": "345.0"
+          }
       },
-      "couponNo": "WA976CE9199756D5BC",
+      "couponNo": "EE4E52FEF46F7B30DE",    
+      "discountInfo": {
+        "couponType": "Discount",
+        "discountName": "8折优惠",
+        "eventId": "EE2017030024"
+      },
       "info": {
-        "payment": {
-          "alipay": "150",
-          "wxpay": "30"
-        },
-        "receipt": "193018485875930103"
+          "casher": "nancy",
+          "receipt": "193018485875930103"
       },
-      "userId": 1,
-      "spotId": 2,
-      "createdAt": "2017-03-01T15:28:49Z",
-      "updatedAt": "2017-03-01T15:44:48Z"
-    }
-    {
-      "id": 2,
-      "listPrice": 1090,
-      "salePrice": 1090,
-      "quantity": 1,
-      "discount": 0,
-      "customerInfo": null,
-      "couponNo": "",
-      "info": null,
-      "userId": 1,
-      "spotId": 1,
-      "createdAt": "2017-03-01T15:47:11Z",
-      "updatedAt": "2017-03-01T15:47:22Z"
+      "payments": null,
+      "userId": 1000001,
+      "spotId": 2000001,
+      "createdAt": "2017-03-29T07:47:02Z",
+      "updatedAt": "2017-03-29T08:12:44.017761577Z"
     }
   ],
   "success": true,
@@ -564,72 +762,119 @@ Success:
 
 Request: 
 
-`pp://staging/cart/get-cart?cartId=1`
+`pp://staging/cart/get-cart?cartId=326`
 
 Success:
 ```
 {
   "result": {
-    "id": 1,
-    "tenantId": "",
-    "channel": "",
+    "id": 326,
+    "tenantId": 10,
     "items": [
       {
-        "uid": "305228",
-        "name": "EKJP6CV102, (59)Navy, (135)135",
-        "skuCode": "EKJP6CV10259135",
-        "contentCode": "EKJP6CV102",
-        "brandCode": "EK",
-        "unitListPrice": 450,
-        "unitSalePrice": 0,
+        "sku": {
+          "id": 169,
+          "contentId": 10,
+          "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
+          "code": "42AB600-1",
+          "listPrice": 69.5,
+          "salePrice": 69.5,
+          "brandCode": "Calvin Klein",
+          "contentCode": "42AB600",
+          "images": {
+            "large": {
+              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+              "width": 385,
+              "height": 500
+            },
+            "medium": {
+              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+              "width": 123,
+              "height": 160
+            },
+            "small": {
+              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+              "width": 58,
+              "height": 75
+            }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "26"
+            },
+            {
+              "k": "Color",
+              "v": "Monument"
+            }
+          ]
+        },
         "quantity": 1,
-        "listPrice": 450,
-        "salePrice": 450,
+        "listPrice": 69.5,
+        "salePrice": 69.5,
         "discount": 0
       },
       {
-        "uid": "1",
-        "name": "LONG DOWN JUMPER, (39)Ivory, X-SMALL",
-        "skuCode": "WHJP64T05C390XS",
-        "contentCode": "WHJP64T05C",
-        "brandCode": "WA",
-        "unitListPrice": 1290,
-        "unitSalePrice": 0,
+        "sku": {
+          "id": 2454,
+          "contentId": 445,
+          "name": "EEAA8A011, 101, 000",
+          "code": "EEAA8A011101000",
+          "listPrice": 28,
+          "salePrice": 28,
+          "brandCode": "EE",
+          "contentCode": "EEAA8A011",
+          "images": null,
+          "options": [
+            {
+              "k": "Size",
+              "v": "(000)生产代表尺寸"
+            },
+            {
+              "k": "Color",
+              "v": "(101)red"
+            }
+          ]
+        },
         "quantity": 2,
-        "listPrice": 2580,
-        "salePrice": 1806,
-        "discount": 774
+        "listPrice": 56,
+        "salePrice": 44.8,
+        "discount": 11.2
       }
     ],
-    "listPrice": 4380,
-    "salePrice": 2256,
+    "listPrice": 125.5,
+    "salePrice": 114.3,
     "quantity": 3,
-    "discount": 774,
+    "discount": 11.2,
+    "remainAmount": 114.3,
     "customerInfo": {
-      "no": "10000000001",
-      "brandCode": "RC",
-      "mobile": "123456789021",
-      "grade": 0,
-      "cardType": "purpleCard",
-      "mileage": {
-        "currentPoints": 9000,
-        "totalEarnPoints": 10000,
-        "totalRedeemPoints": 10,
-        "totalSaleAmount": "345.0"
-      }
+        "no": "10000000001",
+        "brandCode": "RC",
+        "mobile": "123456789021",
+        "grade": 0,
+        "cardType": "purpleCard",
+        "mileage": {
+            "currentPoints": 9000,
+            "totalEarnPoints": 10000,
+            "totalRedeemPoints": 10,
+            "totalSaleAmount": "345.0"
+        }
     },
-    "couponNo": "WA976CE9199756D5BC",
+    "couponNo": "EE4E52FEF46F7B30DE",    
+    "discountInfo": {
+      "couponType": "Discount",
+      "discountName": "8折优惠",
+      "eventId": "EE2017030024"
+    },
     "info": {
-      "payment": {
-        "alipay": "150",
-        "wxpay": "30"
-      },
-      "receipt": "193018485875930103"
+        "casher": "nancy",
+        "receipt": "193018485875930103"
     },
-    "userId": 1,
-    "spotId": 2,
-    "createdAt": "2017-03-01T15:28:49Z",
-    "updatedAt": "2017-03-01T15:44:48Z"
+    "payments": null,
+    "userId": 1000001,
+    "spotId": 2000001,
+    "createdAt": "2017-03-29T07:47:02Z",
+    "updatedAt": "2017-03-29T08:12:44.017761577Z"
   },
   "success": true,
   "error": {}
