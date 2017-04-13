@@ -246,3 +246,88 @@ Success:
   "error": {}
 }
 ```
+
+---
+
+## External Login
+
+`/account/external-login`
+
+#### Parameters
+
+|Name|Required|Type|
+|---|---|---|
+|token|Yes|string|
+
+#### Example
+
+Request: 
+
+`pp://staging/account/external-login?token=YOUR_CLIENT_SECRET_TOKEN`
+
+Success:
+```
+{
+  "result": {
+    "token": "YOUR_TOKEN",
+    "userId": 1000001,
+    "userName": "saleswoman",
+    "tenantId": 10,
+    "tenantCode": "LABS",
+    "tenantName": "LABS",
+    "spots": [
+      {
+        "id": 2000001,
+        "tenantId": 0,
+        "name": "Event Hall",
+        "contracts": [
+          {
+            "BrandCode": "Calvin Klein",
+          },
+          {
+            "BrandCode": "Ted Baker",
+          },
+          {
+            "BrandCode": "Lilly Pulitzer",
+          }
+        ]
+      },
+      {
+        "id": 2000002,
+        "tenantId": 0,
+        "name": "天山店",
+        "contracts": [
+          {
+            "BrandCode": "EE",
+          },
+          {
+            "BrandCode": "EK",
+          },
+          {
+            "BrandCode": "EA",
+          }
+        ]
+      }
+    ],
+    "roles": [
+      "salesman",
+      "manager"
+    ]
+  },
+  "success": true,
+  "error": {}
+}
+```
+
+Fail:
+
+```
+{
+  "success": false,
+  "result": null,
+  "error": {
+    "code": 201,
+    "message": "Login Failed. Invalid token."
+  }
+}
+```
