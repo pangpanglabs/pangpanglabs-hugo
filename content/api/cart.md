@@ -24,23 +24,28 @@ Success:
 ```
 {
   "result": {
-    "id": 326,
-    "tenantId": 10,
-    "items": null,
+    "id": 1349,
+    "tenantId": 12,
     "listPrice": 0,
     "salePrice": 0,
     "quantity": 0,
     "discount": 0,
     "remainAmount": 0,
+    "mileage": {
+      "current": 0,
+      "available": 0,
+      "use": 0
+    },
     "customerInfo": null,
-    "couponNo": "",
+    "couponInfo": null,
     "info": null,
-    "discountInfo": null,
     "payments": null,
     "userId": 1000001,
     "spotId": 2000001,
     "createdAt": "2017-03-29T07:47:02.773134948Z",
-    "updatedAt": "0001-01-01T00:00:00Z"
+    "updatedAt": "0001-01-01T00:00:00Z",
+    "items": null,
+    "suggests": null
   },
   "success": true,
   "error": {}
@@ -79,73 +84,145 @@ Fail:
 
 Request: 
 
-`pp://staging/cart/add-item?cartId=326&skuId=169&quantity=2`
+`pp://staging/cart/add-item?cartId=1349&skuId=184184&quantity=2`
 
 Success:
 ```
 {
   "result": {
-    "id": 326,
-    "tenantId": 10,
+    "id": 1349,
+    "tenantId": 12,
+    "listPrice": 1694,
+    "salePrice": 1498,
+    "quantity": 3,
+    "discount": 196,
+    "remainAmount": 1498,
+    "customerInfo": null,
+    "mileage": {
+      "current": 0,
+      "available": 0,
+      "use": 0
+    },
+    "couponInfo": null,
+    "info": null,
+    "payments": null,
+    "userId": 1000002,
+    "spotId": 2000001,
+    "createdAt": "2017-04-13T15:50:41Z",
+    "updatedAt": "2017-04-13T16:03:30.373911583Z",
     "items": [
       {
         "sku": {
-          "id": 169,
-          "contentId": 10,
-          "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
-          "code": "42AB600-1",
-          "listPrice": 69.5,
-          "salePrice": 69.5,
-          "brandCode": "Calvin Klein",
-          "contentCode": "42AB600",
+          "id": 184184,
+          "contentId": 15579,
+          "name": "EERA72505B, (30)Yellow, (160)160",
+          "code": "EERA72505B30160",
+          "listPrice": 498,
+          "salePrice": 498,
+          "discountName": "",
+          "brandCode": "EE",
+          "contentCode": "EE",
           "images": {
-            "large": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
-              "width": 385,
-              "height": 500
-            },
-            "medium": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
-              "width": 123,
-              "height": 160
-            },
-            "small": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
-              "width": 58,
-              "height": 75
-            }
+              "large": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                  "width": 385,
+                  "height": 500
+              },
+              "medium": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                  "width": 123,
+                  "height": 160
+              },
+              "small": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                  "width": 58,
+                  "height": 75
+              }
           },
           "options": [
             {
               "k": "Size",
-              "v": "26"
+              "v": "(160)160"
             },
             {
               "k": "Color",
-              "v": "Monument"
+              "v": "(30)Yellow"
+            }
+          ]
+        },
+        "quantity": 1,
+        "listPrice": 498,
+        "salePrice": 498,
+        "discount": 0
+      },
+      {
+        "sku": {
+          "id": 184413,
+          "contentId": 15621,
+          "name": "EETA72553N, (59)Navy, (155)155",
+          "code": "EETA72553N59155",
+          "listPrice": 598,
+          "salePrice": 500,
+          "discountName": "EETA72553N Discount! ￥500",
+          "brandCode": "EE",
+          "contentCode": "EE",
+          "images": {
+              "large": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                  "width": 385,
+                  "height": 500
+              },
+              "medium": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                  "width": 123,
+                  "height": 160
+              },
+              "small": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                  "width": 58,
+                  "height": 75
+              }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "(155)155"
+            },
+            {
+              "k": "Color",
+              "v": "(59)Navy"
             }
           ]
         },
         "quantity": 2,
-        "listPrice": 139,
-        "salePrice": 139,
-        "discount": 0
+        "listPrice": 1196,
+        "salePrice": 1000,
+        "discount": 196
       }
     ],
-    "listPrice": 139,
-    "salePrice": 139,
-    "quantity": 2,
-    "discount": 0,
-    "remainAmount": 139,
-    "customerInfo": null,
-    "couponNo": "",
-    "info": null,
-    "discountInfo": null,
-    "payments": null,
-    "userId": 1000001,
-    "spotId": 2000001,
-    "createdAt": "2017-03-29T07:47:02Z",
-    "updatedAt": "2017-03-29T07:47:54.783140997Z"
+    "suggests": [
+      {
+        "name": "EERA72505 Bundle Sale",
+        "desc": "",
+        "listPrice": 796,
+        "salePrice": 600,
+        "startAt": "2017-04-13T11:32:47Z",
+        "endAt": "2017-05-13T11:32:47Z",
+        "channelId": 0,
+        "virtualContents": [
+          {
+            "contentId": 15579,
+            "listPrice": 498,
+            "salePrice": 400
+          },
+          {
+            "contentId": 15628,
+            "listPrice": 298,
+            "salePrice": 200
+          }
+        ]
+      }
+    ]
   },
   "success": true,
   "error": {}
@@ -184,73 +261,145 @@ Fail:
 
 Request: 
 
-`pp://staging/cart/remove-item?cartId=326&skuId=169&quantity=1`
+`pp://staging/cart/remove-item?cartId=1349&skuId=184184&quantity=1`
 
 Success:
 ```
 {
   "result": {
-    "id": 326,
-    "tenantId": 10,
+    "id": 1349,
+    "tenantId": 12,
+    "listPrice": 1096,
+    "salePrice": 998,
+    "quantity": 2,
+    "discount": 98,
+    "remainAmount": 998,
+    "customerInfo": null,
+    "mileage": {
+      "current": 0,
+      "available": 0,
+      "use": 0
+    },
+    "couponInfo": null,
+    "info": null,
+    "payments": null,
+    "userId": 1000002,
+    "spotId": 2000001,
+    "createdAt": "2017-04-13T15:50:41Z",
+    "updatedAt": "2017-04-13T16:00:48.401563037Z",
     "items": [
       {
         "sku": {
-          "id": 169,
-          "contentId": 10,
-          "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
-          "code": "42AB600-1",
-          "listPrice": 69.5,
-          "salePrice": 69.5,
-          "brandCode": "Calvin Klein",
-          "contentCode": "42AB600",
+          "id": 184184,
+          "contentId": 15579,
+          "name": "EERA72505B, (30)Yellow, (160)160",
+          "code": "EERA72505B30160",
+          "listPrice": 498,
+          "salePrice": 498,
+          "discountName": "",
+          "brandCode": "EE",
+          "contentCode": "EE",
           "images": {
-            "large": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
-              "width": 385,
-              "height": 500
-            },
-            "medium": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
-              "width": 123,
-              "height": 160
-            },
-            "small": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
-              "width": 58,
-              "height": 75
-            }
+              "large": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                  "width": 385,
+                  "height": 500
+              },
+              "medium": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                  "width": 123,
+                  "height": 160
+              },
+              "small": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                  "width": 58,
+                  "height": 75
+              }
           },
           "options": [
             {
               "k": "Size",
-              "v": "26"
+              "v": "(160)160"
             },
             {
               "k": "Color",
-              "v": "Monument"
+              "v": "(30)Yellow"
             }
           ]
         },
         "quantity": 1,
-        "listPrice": 69.5,
-        "salePrice": 69.5,
+        "listPrice": 498,
+        "salePrice": 498,
         "discount": 0
+      },
+      {
+        "sku": {
+          "id": 184413,
+          "contentId": 15621,
+          "name": "EETA72553N, (59)Navy, (155)155",
+          "code": "EETA72553N59155",
+          "listPrice": 598,
+          "salePrice": 500,
+          "discountName": "EETA72553N Discount! ￥500",
+          "brandCode": "EE",
+          "contentCode": "EE",
+          "images": {
+              "large": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                  "width": 385,
+                  "height": 500
+              },
+              "medium": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                  "width": 123,
+                  "height": 160
+              },
+              "small": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                  "width": 58,
+                  "height": 75
+              }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "(155)155"
+            },
+            {
+              "k": "Color",
+              "v": "(59)Navy"
+            }
+          ]
+        },
+        "quantity": 1,
+        "listPrice": 598,
+        "salePrice": 500,
+        "discount": 98
       }
     ],
-    "listPrice": 69.5,
-    "salePrice": 69.5,
-    "quantity": 1,
-    "discount": 0,
-    "remainAmount": 69.5,
-    "customerInfo": null,
-    "couponNo": "",
-    "info": null,
-    "discountInfo": null,
-    "payments": null,
-    "userId": 1000001,
-    "spotId": 2000001,
-    "createdAt": "2017-03-29T07:47:02Z",
-    "updatedAt": "2017-03-29T07:49:29.971205281Z"
+    "suggests": [
+      {
+        "name": "EERA72505 Bundle Sale",
+        "desc": "",
+        "listPrice": 796,
+        "salePrice": 600,
+        "startAt": "2017-04-13T11:32:47Z",
+        "endAt": "2017-05-13T11:32:47Z",
+        "channelId": 0,
+        "virtualContents": [
+          {
+            "contentId": 15579,
+            "listPrice": 498,
+            "salePrice": 400
+          },
+          {
+            "contentId": 15628,
+            "listPrice": 298,
+            "salePrice": 200
+          }
+        ]
+      }
+    ]
   },
   "success": true,
   "error": {}
@@ -287,88 +436,169 @@ Fail:
 
 Request: 
 
-`pp://staging/cart/set-customer?cartId=326&no=RC10000000001`
+`pp://staging/cart/set-customer?cartId=1349&no=EE0000053147`
 
 Success:
 ```
 {
-    "result": {
-        "id": 326,
-        "tenantId": 10,
-        "items": [
-            {
-                "sku": {
-                    "id": 169,
-                    "contentId": 10,
-                    "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
-                    "code": "42AB600-1",
-                    "listPrice": 69.5,
-                    "salePrice": 69.5,
-                    "brandCode": "Calvin Klein",
-                    "contentCode": "42AB600",
-                    "images": {
-                        "large": {
-                            "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
-                            "width": 385,
-                            "height": 500
-                        },
-                        "medium": {
-                            "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
-                            "width": 123,
-                            "height": 160
-                        },
-                        "small": {
-                            "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
-                            "width": 58,
-                            "height": 75
-                        }
-                    },
-                    "options": [
-                        {
-                            "k": "Size",
-                            "v": "26"
-                        },
-                        {
-                            "k": "Color",
-                            "v": "Monument"
-                        }
-                    ]
-                },
-                "quantity": 1,
-                "listPrice": 69.5,
-                "salePrice": 69.5,
-                "discount": 0
-            }
-        ],
-        "listPrice": 69.5,
-        "salePrice": 69.5,
-        "quantity": 1,
-        "discount": 0,
-        "remainAmount": 69.5,
-        "customerInfo": {
-            "no": "10000000001",
-            "brandCode": "RC",
-            "mobile": "123456789021",
-            "grade": 0,
-            "cardType": "purpleCard",
-            "mileage": {
-                "currentPoints": 9000,
-                "totalEarnPoints": 10000,
-                "totalRedeemPoints": 10,
-                "totalSaleAmount": "345.0"
-            }
-        },
-        "couponNo": "",
-        "info": null,
-        "discountInfo": null,
-        "payments": null,
-        "userId": 1000001,
-        "spotId": 2000001,
-        "createdAt": "2017-03-29T07:47:02Z",
-        "updatedAt": "2017-03-29T07:49:29.971205281Z"
+  "result": {
+    "id": 1349,
+    "tenantId": 12,
+    "listPrice": 1096,
+    "salePrice": 998,
+    "quantity": 2,
+    "discount": 98,
+    "remainAmount": 998,
+    "customerInfo": {
+      "id": 1065586,
+      "no": "0000053147",
+      "brandCode": "EE",
+      "mobile": "13818448893",
+      "grade": 3,
+      "cardType": "diamondCard",
+      "mileage": {
+        "currentPoints": 208,
+        "totalEarnPoints": 1108,
+        "totalRedeemPoints": 900,
+        "totalSaleAmount": 36330.94
+      },
+      "benefit": {
+        "mileage": 208,
+        "max_mileage_percent": 50,
+        "discount_percent": 5,
+        "max_discount_price": 0,
+        "birthday_discount_percent": 30,
+        "max_birthday_price": 5000
+      }
     },
-    "success": true,
-    "error": {}
+    "mileage": {
+      "current": 208,
+      "available": 208,
+      "use": 0
+    },
+    "couponInfo": null,
+    "info": null,
+    "payments": null,
+    "userId": 1000002,
+    "spotId": 2000001,
+    "createdAt": "2017-04-13T15:50:41Z",
+    "updatedAt": "2017-04-13T16:00:48.401563037Z",
+    "items": [
+      {
+        "sku": {
+          "id": 184184,
+          "contentId": 15579,
+          "name": "EERA72505B, (30)Yellow, (160)160",
+          "code": "EERA72505B30160",
+          "listPrice": 498,
+          "salePrice": 498,
+          "discountName": "",
+          "brandCode": "EE",
+          "contentCode": "EE",
+          "images": {
+              "large": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                  "width": 385,
+                  "height": 500
+              },
+              "medium": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                  "width": 123,
+                  "height": 160
+              },
+              "small": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                  "width": 58,
+                  "height": 75
+              }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "(160)160"
+            },
+            {
+              "k": "Color",
+              "v": "(30)Yellow"
+            }
+          ]
+        },
+        "quantity": 1,
+        "listPrice": 498,
+        "salePrice": 498,
+        "discount": 0
+      },
+      {
+        "sku": {
+          "id": 184413,
+          "contentId": 15621,
+          "name": "EETA72553N, (59)Navy, (155)155",
+          "code": "EETA72553N59155",
+          "listPrice": 598,
+          "salePrice": 500,
+          "discountName": "EETA72553N Discount! ￥500",
+          "brandCode": "EE",
+          "contentCode": "EE",
+          "images": {
+              "large": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                  "width": 385,
+                  "height": 500
+              },
+              "medium": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                  "width": 123,
+                  "height": 160
+              },
+              "small": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                  "width": 58,
+                  "height": 75
+              }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "(155)155"
+            },
+            {
+              "k": "Color",
+              "v": "(59)Navy"
+            }
+          ]
+        },
+        "quantity": 1,
+        "listPrice": 598,
+        "salePrice": 500,
+        "discount": 98
+      }
+    ],
+    "suggests": [
+      {
+        "name": "EERA72505 Bundle Sale",
+        "desc": "",
+        "listPrice": 796,
+        "salePrice": 600,
+        "startAt": "2017-04-13T11:32:47Z",
+        "endAt": "2017-05-13T11:32:47Z",
+        "channelId": 0,
+        "virtualContents": [
+          {
+            "contentId": 15579,
+            "listPrice": 498,
+            "salePrice": 400
+          },
+          {
+            "contentId": 15628,
+            "listPrice": 298,
+            "salePrice": 200
+          }
+        ]
+      }
+    ]
+  },
+  "success": true,
+  "error": {}
 }
 ```
 
@@ -389,116 +619,171 @@ Success:
 
 Request: 
 
-`pp://staging/cart/set-coupon?cartId=326&no=WA976CE9199756D5BC`
+`pp://staging/cart/set-coupon?cartId=1349&no=EE4EEDE03E762A2AA2`
 
 Success:
 ```
 {
   "result": {
-    "id": 326,
-    "tenantId": 10,
-    "items": [
-      {
-        "sku": {
-          "id": 169,
-          "contentId": 10,
-          "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
-          "code": "42AB600-1",
-          "listPrice": 69.5,
-          "salePrice": 69.5,
-          "brandCode": "Calvin Klein",
-          "contentCode": "42AB600",
-          "images": {
-            "large": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
-              "width": 385,
-              "height": 500
-            },
-            "medium": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
-              "width": 123,
-              "height": 160
-            },
-            "small": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
-              "width": 58,
-              "height": 75
-            }
-          },
-          "options": [
-            {
-              "k": "Size",
-              "v": "26"
-            },
-            {
-              "k": "Color",
-              "v": "Monument"
-            }
-          ]
-        },
-        "quantity": 1,
-        "listPrice": 69.5,
-        "salePrice": 69.5,
-        "discount": 0
-      },
-      {
-        "sku": {
-          "id": 2454,
-          "contentId": 445,
-          "name": "EEAA8A011, 101, 000",
-          "code": "EEAA8A011101000",
-          "listPrice": 28,
-          "salePrice": 28,
-          "brandCode": "EE",
-          "contentCode": "EEAA8A011",
-          "images": null,
-          "options": [
-            {
-              "k": "Size",
-              "v": "(000)生产代表尺寸"
-            },
-            {
-              "k": "Color",
-              "v": "(101)red"
-            }
-          ]
-        },
-        "quantity": 2,
-        "listPrice": 56,
-        "salePrice": 44.8,
-        "discount": 11.2
-      }
-    ],
-    "listPrice": 125.5,
-    "salePrice": 114.3,
-    "quantity": 3,
-    "discount": 11.2,
-    "remainAmount": 114.3,
+    "id": 1349,
+    "tenantId": 12,
+    "listPrice": 1096,
+    "salePrice": 898,
+    "quantity": 2,
+    "discount": 198,
+    "remainAmount": 898,
     "customerInfo": {
-        "no": "10000000001",
-        "brandCode": "RC",
-        "mobile": "123456789021",
-        "grade": 0,
-        "cardType": "purpleCard",
-        "mileage": {
-            "currentPoints": 9000,
-            "totalEarnPoints": 10000,
-            "totalRedeemPoints": 10,
-            "totalSaleAmount": "345.0"
-        }
+      "id": 1065586,
+      "no": "0000053147",
+      "brandCode": "EE",
+      "mobile": "13818448893",
+      "grade": 3,
+      "cardType": "diamondCard",
+      "mileage": {
+        "currentPoints": 208,
+        "totalEarnPoints": 1108,
+        "totalRedeemPoints": 900,
+        "totalSaleAmount": 36330.94
+      },
+      "benefit": {
+        "mileage": 208,
+        "max_mileage_percent": 50,
+        "discount_percent": 5,
+        "max_discount_price": 0,
+        "birthday_discount_percent": 30,
+        "max_birthday_price": 5000
+      }
     },
-    "couponNo": "EE4E52FEF46F7B30DE",    
-    "discountInfo": {
+    "mileage": {
+      "current": 208,
+      "available": 208,
+      "use": 0
+    },
+    "couponInfo": {
+      "no": "EE4EEDE03E762A2AA2",
       "couponType": "Discount",
       "discountName": "8折优惠",
       "eventId": "EE2017030024"
     },
-    "info": {},
+    "info": null,
     "payments": null,
-    "userId": 1000001,
+    "userId": 1000002,
     "spotId": 2000001,
-    "createdAt": "2017-03-29T07:47:02Z",
-    "updatedAt": "2017-03-29T08:12:44.017761577Z"
+    "createdAt": "2017-04-13T15:50:41Z",
+    "updatedAt": "2017-04-13T16:00:48.401563037Z",
+    "items": [
+      {
+        "sku": {
+          "id": 184184,
+          "contentId": 15579,
+          "name": "EERA72505B, (30)Yellow, (160)160",
+          "code": "EERA72505B30160",
+          "listPrice": 498,
+          "salePrice": 398,
+          "discountName": "8折优惠",
+          "brandCode": "EE",
+          "contentCode": "EE",
+          "images": {
+              "large": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                  "width": 385,
+                  "height": 500
+              },
+              "medium": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                  "width": 123,
+                  "height": 160
+              },
+              "small": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                  "width": 58,
+                  "height": 75
+              }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "(160)160"
+            },
+            {
+              "k": "Color",
+              "v": "(30)Yellow"
+            }
+          ]
+        },
+        "quantity": 1,
+        "listPrice": 498,
+        "salePrice": 398,
+        "discount": 100
+      },
+      {
+        "sku": {
+          "id": 184413,
+          "contentId": 15621,
+          "name": "EETA72553N, (59)Navy, (155)155",
+          "code": "EETA72553N59155",
+          "listPrice": 598,
+          "salePrice": 500,
+          "discountName": "EETA72553N Discount! ￥500",
+          "brandCode": "EE",
+          "contentCode": "EE",
+          "images": {
+              "large": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                  "width": 385,
+                  "height": 500
+              },
+              "medium": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                  "width": 123,
+                  "height": 160
+              },
+              "small": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                  "width": 58,
+                  "height": 75
+              }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "(155)155"
+            },
+            {
+              "k": "Color",
+              "v": "(59)Navy"
+            }
+          ]
+        },
+        "quantity": 1,
+        "listPrice": 598,
+        "salePrice": 500,
+        "discount": 98
+      }
+    ],
+    "suggests": [
+      {
+        "name": "EERA72505 Bundle Sale",
+        "desc": "",
+        "listPrice": 796,
+        "salePrice": 600,
+        "startAt": "2017-04-13T11:32:47Z",
+        "endAt": "2017-05-13T11:32:47Z",
+        "channelId": 0,
+        "virtualContents": [
+          {
+            "contentId": 15579,
+            "listPrice": 498,
+            "salePrice": 400
+          },
+          {
+            "contentId": 15628,
+            "listPrice": 298,
+            "salePrice": 200
+          }
+        ]
+      }
+    ]
   },
   "success": true,
   "error": {}
@@ -528,113 +813,357 @@ Success:
 ```
 {
   "result": {
-    "id": 326,
-    "tenantId": 10,
-    "items": [
-      {
-        "sku": {
-          "id": 169,
-          "contentId": 10,
-          "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
-          "code": "42AB600-1",
-          "listPrice": 69.5,
-          "salePrice": 69.5,
-          "brandCode": "Calvin Klein",
-          "contentCode": "42AB600",
-          "images": {
-            "large": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
-              "width": 385,
-              "height": 500
-            },
-            "medium": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
-              "width": 123,
-              "height": 160
-            },
-            "small": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
-              "width": 58,
-              "height": 75
-            }
-          },
-          "options": [
-            {
-              "k": "Size",
-              "v": "26"
-            },
-            {
-              "k": "Color",
-              "v": "Monument"
-            }
-          ]
-        },
-        "quantity": 1,
-        "listPrice": 69.5,
-        "salePrice": 69.5,
-        "discount": 0
-      },
-      {
-        "sku": {
-          "id": 2454,
-          "contentId": 445,
-          "name": "EEAA8A011, 101, 000",
-          "code": "EEAA8A011101000",
-          "listPrice": 28,
-          "salePrice": 28,
-          "brandCode": "EE",
-          "contentCode": "EEAA8A011",
-          "images": null,
-          "options": [
-            {
-              "k": "Size",
-              "v": "(000)生产代表尺寸"
-            },
-            {
-              "k": "Color",
-              "v": "(101)red"
-            }
-          ]
-        },
-        "quantity": 2,
-        "listPrice": 56,
-        "salePrice": 44.8,
-        "discount": 11.2
-      }
-    ],
-    "listPrice": 125.5,
-    "salePrice": 114.3,
-    "quantity": 3,
-    "discount": 11.2,
-    "remainAmount": 114.3,
+    "id": 1349,
+    "tenantId": 12,
+    "listPrice": 1096,
+    "salePrice": 898,
+    "quantity": 2,
+    "discount": 198,
+    "remainAmount": 898,
     "customerInfo": {
-        "no": "10000000001",
-        "brandCode": "RC",
-        "mobile": "123456789021",
-        "grade": 0,
-        "cardType": "purpleCard",
-        "mileage": {
-            "currentPoints": 9000,
-            "totalEarnPoints": 10000,
-            "totalRedeemPoints": 10,
-            "totalSaleAmount": "345.0"
-        }
+      "id": 1065586,
+      "no": "0000053147",
+      "brandCode": "EE",
+      "mobile": "13818448893",
+      "grade": 3,
+      "cardType": "diamondCard",
+      "mileage": {
+        "currentPoints": 208,
+        "totalEarnPoints": 1108,
+        "totalRedeemPoints": 900,
+        "totalSaleAmount": 36330.94
+      },
+      "benefit": {
+        "mileage": 208,
+        "max_mileage_percent": 50,
+        "discount_percent": 5,
+        "max_discount_price": 0,
+        "birthday_discount_percent": 30,
+        "max_birthday_price": 5000
+      }
     },
-    "couponNo": "EE4E52FEF46F7B30DE",    
-    "discountInfo": {
+    "mileage": {
+      "current": 208,
+      "available": 208,
+      "use": 0
+    },
+    "couponInfo": {
+      "no": "EE4EEDE03E762A2AA2",
       "couponType": "Discount",
       "discountName": "8折优惠",
       "eventId": "EE2017030024"
     },
     "info": {
-        "casher": "nancy",
-        "receipt": "193018485875930103"
+      "receipt": "193018485875930103",
+      "casher": "nancy"
     },
     "payments": null,
-    "userId": 1000001,
+    "userId": 1000002,
     "spotId": 2000001,
-    "createdAt": "2017-03-29T07:47:02Z",
-    "updatedAt": "2017-03-29T08:12:44.017761577Z"
+    "createdAt": "2017-04-13T15:50:41Z",
+    "updatedAt": "2017-04-13T16:00:48.401563037Z",
+    "items": [
+      {
+        "sku": {
+          "id": 184184,
+          "contentId": 15579,
+          "name": "EERA72505B, (30)Yellow, (160)160",
+          "code": "EERA72505B30160",
+          "listPrice": 498,
+          "salePrice": 398,
+          "discountName": "8折优惠",
+          "brandCode": "EE",
+          "contentCode": "EE",
+          "images": {
+              "large": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                  "width": 385,
+                  "height": 500
+              },
+              "medium": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                  "width": 123,
+                  "height": 160
+              },
+              "small": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                  "width": 58,
+                  "height": 75
+              }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "(160)160"
+            },
+            {
+              "k": "Color",
+              "v": "(30)Yellow"
+            }
+          ]
+        },
+        "quantity": 1,
+        "listPrice": 498,
+        "salePrice": 398,
+        "discount": 100
+      },
+      {
+        "sku": {
+          "id": 184413,
+          "contentId": 15621,
+          "name": "EETA72553N, (59)Navy, (155)155",
+          "code": "EETA72553N59155",
+          "listPrice": 598,
+          "salePrice": 500,
+          "discountName": "EETA72553N Discount! ￥500",
+          "brandCode": "EE",
+          "contentCode": "EE",
+          "images": {
+              "large": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                  "width": 385,
+                  "height": 500
+              },
+              "medium": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                  "width": 123,
+                  "height": 160
+              },
+              "small": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                  "width": 58,
+                  "height": 75
+              }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "(155)155"
+            },
+            {
+              "k": "Color",
+              "v": "(59)Navy"
+            }
+          ]
+        },
+        "quantity": 1,
+        "listPrice": 598,
+        "salePrice": 500,
+        "discount": 98
+      }
+    ],
+    "suggests": [
+      {
+        "name": "EERA72505 Bundle Sale",
+        "desc": "",
+        "listPrice": 796,
+        "salePrice": 600,
+        "startAt": "2017-04-13T11:32:47Z",
+        "endAt": "2017-05-13T11:32:47Z",
+        "channelId": 0,
+        "virtualContents": [
+          {
+            "contentId": 15579,
+            "listPrice": 498,
+            "salePrice": 400
+          },
+          {
+            "contentId": 15628,
+            "listPrice": 298,
+            "salePrice": 200
+          }
+        ]
+      }
+    ]
+  },
+  "success": true,
+  "error": {}
+}
+```
+
+## Use mileage
+
+`/cart/use-mileage`
+
+#### Parameters
+
+|Name|Required|Type|
+|---|---|---|
+|cartId|Yes|number|
+|amount|Yes|number|
+
+#### Example
+
+Request: 
+
+`pp://staging/cart/use-mileage?cartId=1349&amount=208`
+
+Success:
+```
+{
+  "result": {
+    "id": 1349,
+    "tenantId": 12,
+    "listPrice": 1096,
+    "salePrice": 898,
+    "quantity": 2,
+    "discount": 198,
+    "remainAmount": 690,
+    "customerInfo": {
+      "id": 1065586,
+      "no": "0000053147",
+      "brandCode": "EE",
+      "mobile": "13818448893",
+      "grade": 3,
+      "cardType": "diamondCard",
+      "mileage": {
+        "currentPoints": 208,
+        "totalEarnPoints": 1108,
+        "totalRedeemPoints": 900,
+        "totalSaleAmount": 36330.94
+      },
+      "benefit": {
+        "mileage": 208,
+        "max_mileage_percent": 50,
+        "discount_percent": 5,
+        "max_discount_price": 0,
+        "birthday_discount_percent": 30,
+        "max_birthday_price": 5000
+      }
+    },
+    "mileage": {
+      "current": 208,
+      "available": 208,
+      "use": 208
+    },
+    "couponInfo": {
+      "no": "EE4EEDE03E762A2AA2",
+      "couponType": "Discount",
+      "discountName": "8折优惠",
+      "eventId": "EE2017030024"
+    },
+    "info": {
+      "receipt": "193018485875930103",
+      "casher": "nancy"
+    },
+    "payments": null,
+    "userId": 1000002,
+    "spotId": 2000001,
+    "createdAt": "2017-04-13T15:50:41Z",
+    "updatedAt": "2017-04-13T16:00:48.401563037Z",
+    "items": [
+      {
+        "sku": {
+          "id": 184184,
+          "contentId": 15579,
+          "name": "EERA72505B, (30)Yellow, (160)160",
+          "code": "EERA72505B30160",
+          "listPrice": 498,
+          "salePrice": 398,
+          "discountName": "8折优惠",
+          "brandCode": "EE",
+          "contentCode": "EE",
+          "images": {
+              "large": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                  "width": 385,
+                  "height": 500
+              },
+              "medium": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                  "width": 123,
+                  "height": 160
+              },
+              "small": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                  "width": 58,
+                  "height": 75
+              }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "(160)160"
+            },
+            {
+              "k": "Color",
+              "v": "(30)Yellow"
+            }
+          ]
+        },
+        "quantity": 1,
+        "listPrice": 498,
+        "salePrice": 398,
+        "discount": 100
+      },
+      {
+        "sku": {
+          "id": 184413,
+          "contentId": 15621,
+          "name": "EETA72553N, (59)Navy, (155)155",
+          "code": "EETA72553N59155",
+          "listPrice": 598,
+          "salePrice": 500,
+          "discountName": "EETA72553N Discount! ￥500",
+          "brandCode": "EE",
+          "contentCode": "EE",
+          "images": {
+              "large": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                  "width": 385,
+                  "height": 500
+              },
+              "medium": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                  "width": 123,
+                  "height": 160
+              },
+              "small": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                  "width": 58,
+                  "height": 75
+              }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "(155)155"
+            },
+            {
+              "k": "Color",
+              "v": "(59)Navy"
+            }
+          ]
+        },
+        "quantity": 1,
+        "listPrice": 598,
+        "salePrice": 500,
+        "discount": 98
+      }
+    ],
+    "suggests": [
+      {
+        "name": "EERA72505 Bundle Sale",
+        "desc": "",
+        "listPrice": 796,
+        "salePrice": 600,
+        "startAt": "2017-04-13T11:32:47Z",
+        "endAt": "2017-05-13T11:32:47Z",
+        "channelId": 0,
+        "virtualContents": [
+          {
+            "contentId": 15579,
+            "listPrice": 498,
+            "salePrice": 400
+          },
+          {
+            "contentId": 15628,
+            "listPrice": 298,
+            "salePrice": 200
+          }
+        ]
+      }
+    ]
   },
   "success": true,
   "error": {}
@@ -658,128 +1187,179 @@ Success:
 
 Request: 
 
-`pp://staging/cart/set-payment?cartId=326&method=alipay&amount=50`
+`pp://staging/cart/set-payment?cartId=1349&method=alipay&amount=690`
 
 Success:
 ```
 {
   "result": {
-    "id": 326,
-    "tenantId": 10,
-    "items": [
-      {
-        "sku": {
-          "id": 169,
-          "contentId": 10,
-          "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
-          "code": "42AB600-1",
-          "listPrice": 69.5,
-          "salePrice": 69.5,
-          "brandCode": "Calvin Klein",
-          "contentCode": "42AB600",
-          "images": {
-            "large": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
-              "width": 385,
-              "height": 500
-            },
-            "medium": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
-              "width": 123,
-              "height": 160
-            },
-            "small": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
-              "width": 58,
-              "height": 75
-            }
-          },
-          "options": [
-            {
-              "k": "Size",
-              "v": "26"
-            },
-            {
-              "k": "Color",
-              "v": "Monument"
-            }
-          ]
-        },
-        "quantity": 1,
-        "listPrice": 69.5,
-        "salePrice": 69.5,
-        "discount": 0
-      },
-      {
-        "sku": {
-          "id": 2454,
-          "contentId": 445,
-          "name": "EEAA8A011, 101, 000",
-          "code": "EEAA8A011101000",
-          "listPrice": 28,
-          "salePrice": 28,
-          "brandCode": "EE",
-          "contentCode": "EEAA8A011",
-          "images": null,
-          "options": [
-            {
-              "k": "Size",
-              "v": "(000)生产代表尺寸"
-            },
-            {
-              "k": "Color",
-              "v": "(101)red"
-            }
-          ]
-        },
-        "quantity": 2,
-        "listPrice": 56,
-        "salePrice": 44.8,
-        "discount": 11.2
-      }
-    ],
-    "listPrice": 125.5,
-    "salePrice": 114.3,
-    "quantity": 3,
-    "discount": 11.2,
-    "remainAmount": 4.3,
+    "id": 1349,
+    "tenantId": 12,
+    "listPrice": 1096,
+    "salePrice": 898,
+    "quantity": 2,
+    "discount": 198,
+    "remainAmount": 0,
     "customerInfo": {
-        "no": "10000000001",
-        "brandCode": "RC",
-        "mobile": "123456789021",
-        "grade": 0,
-        "cardType": "purpleCard",
-        "mileage": {
-            "currentPoints": 9000,
-            "totalEarnPoints": 10000,
-            "totalRedeemPoints": 10,
-            "totalSaleAmount": "345.0"
-        }
+      "id": 1065586,
+      "no": "0000053147",
+      "brandCode": "EE",
+      "mobile": "13818448893",
+      "grade": 3,
+      "cardType": "diamondCard",
+      "mileage": {
+        "currentPoints": 208,
+        "totalEarnPoints": 1108,
+        "totalRedeemPoints": 900,
+        "totalSaleAmount": 36330.94
+      },
+      "benefit": {
+        "mileage": 208,
+        "max_mileage_percent": 50,
+        "discount_percent": 5,
+        "max_discount_price": 0,
+        "birthday_discount_percent": 30,
+        "max_birthday_price": 5000
+      }
     },
-    "couponNo": "EE4E52FEF46F7B30DE",    
-    "discountInfo": {
+    "mileage": {
+      "current": 208,
+      "available": 208,
+      "use": 208
+    },
+    "couponInfo": {
+      "no": "EE4EEDE03E762A2AA2",
       "couponType": "Discount",
       "discountName": "8折优惠",
       "eventId": "EE2017030024"
     },
     "info": {
-        "casher": "nancy",
-        "receipt": "193018485875930103"
+      "receipt": "193018485875930103",
+      "casher": "nancy"
     },
     "payments": [
       {
         "method": "alipay",
-        "amount": 50
-      },
-      {
-        "method": "wxpay",
-        "amount": 60
+        "amount": 690
       }
     ],
-    "userId": 1000001,
+    "userId": 1000002,
     "spotId": 2000001,
-    "createdAt": "2017-03-29T07:47:02Z",
-    "updatedAt": "2017-03-29T08:12:44.017761577Z"
+    "createdAt": "2017-04-13T15:50:41Z",
+    "updatedAt": "2017-04-13T16:00:48.401563037Z",
+    "items": [
+      {
+        "sku": {
+          "id": 184184,
+          "contentId": 15579,
+          "name": "EERA72505B, (30)Yellow, (160)160",
+          "code": "EERA72505B30160",
+          "listPrice": 498,
+          "salePrice": 398,
+          "discountName": "8折优惠",
+          "brandCode": "EE",
+          "contentCode": "EE",
+          "images": {
+              "large": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                  "width": 385,
+                  "height": 500
+              },
+              "medium": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                  "width": 123,
+                  "height": 160
+              },
+              "small": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                  "width": 58,
+                  "height": 75
+              }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "(160)160"
+            },
+            {
+              "k": "Color",
+              "v": "(30)Yellow"
+            }
+          ]
+        },
+        "quantity": 1,
+        "listPrice": 498,
+        "salePrice": 398,
+        "discount": 100
+      },
+      {
+        "sku": {
+          "id": 184413,
+          "contentId": 15621,
+          "name": "EETA72553N, (59)Navy, (155)155",
+          "code": "EETA72553N59155",
+          "listPrice": 598,
+          "salePrice": 500,
+          "discountName": "EETA72553N Discount! ￥500",
+          "brandCode": "EE",
+          "contentCode": "EE",
+          "images": {
+              "large": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                  "width": 385,
+                  "height": 500
+              },
+              "medium": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                  "width": 123,
+                  "height": 160
+              },
+              "small": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                  "width": 58,
+                  "height": 75
+              }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "(155)155"
+            },
+            {
+              "k": "Color",
+              "v": "(59)Navy"
+            }
+          ]
+        },
+        "quantity": 1,
+        "listPrice": 598,
+        "salePrice": 500,
+        "discount": 98
+      }
+    ],
+    "suggests": [
+      {
+        "name": "EERA72505 Bundle Sale",
+        "desc": "",
+        "listPrice": 796,
+        "salePrice": 600,
+        "startAt": "2017-04-13T11:32:47Z",
+        "endAt": "2017-05-13T11:32:47Z",
+        "channelId": 0,
+        "virtualContents": [
+          {
+            "contentId": 15579,
+            "listPrice": 498,
+            "salePrice": 400
+          },
+          {
+            "contentId": 15628,
+            "listPrice": 298,
+            "salePrice": 200
+          }
+        ]
+      }
+    ]
   },
   "success": true,
   "error": {}
@@ -801,7 +1381,7 @@ Success:
 
 Request: 
 
-`pp://staging/cart/remove-cart?cartId=326`
+`pp://staging/cart/remove-cart?cartId=1349`
 
 Success:
 ```
@@ -847,41 +1427,52 @@ Success:
 {
   "result": [
     {
-      "id": 326,
-      "tenantId": 10,    
-      "listPrice": 125.5,
-      "salePrice": 114.3,
-      "quantity": 3,
-      "discount": 11.2,
-      "remainAmount": 114.3,
-      "customerInfo": {
-          "no": "10000000001",
-          "brandCode": "RC",
-          "mobile": "123456789021",
-          "grade": 0,
-          "cardType": "purpleCard",
-          "mileage": {
-              "currentPoints": 9000,
-              "totalEarnPoints": 10000,
-              "totalRedeemPoints": 10,
-              "totalSaleAmount": "345.0"
-          }
+      "id": 347,
+      "tenantId": 12,
+      "listPrice": 148,
+      "salePrice": 148,
+      "quantity": 1,
+      "discount": 0,
+      "remainAmount": 148,
+      "customerInfo": null,
+      "mileage": {
+        "current": 0,
+        "available": 0,
+        "use": 0
       },
-      "couponNo": "EE4E52FEF46F7B30DE",    
-      "discountInfo": {
-        "couponType": "Discount",
-        "discountName": "8折优惠",
-        "eventId": "EE2017030024"
-      },
-      "info": {
-          "casher": "nancy",
-          "receipt": "193018485875930103"
-      },
+      "couponInfo": null,
+      "info": null,
       "payments": null,
-      "userId": 1000001,
+      "userId": 1000002,
       "spotId": 2000001,
-      "createdAt": "2017-03-29T07:47:02Z",
-      "updatedAt": "2017-03-29T08:12:44.017761577Z"
+      "createdAt": "2017-03-29T16:10:45Z",
+      "updatedAt": "0001-01-01T00:00:00Z",
+      "items": null,
+      "suggests": null
+    },
+    {
+      "id": 352,
+      "tenantId": 12,
+      "listPrice": 0,
+      "salePrice": 0,
+      "quantity": 0,
+      "discount": 0,
+      "remainAmount": 0,
+      "customerInfo": null,
+      "mileage": {
+        "current": 0,
+        "available": 0,
+        "use": 0
+      },
+      "couponInfo": null,
+      "info": null,
+      "payments": null,
+      "userId": 1000002,
+      "spotId": 2000001,
+      "createdAt": "2017-03-29T16:31:33Z",
+      "updatedAt": "0001-01-01T00:00:00Z",
+      "items": null,
+      "suggests": null
     }
   ],
   "success": true,
@@ -907,119 +1498,179 @@ Success:
 
 Request: 
 
-`pp://staging/cart/get-cart?cartId=326`
+`pp://staging/cart/get-cart?cartId=1349`
 
 Success:
 ```
 {
   "result": {
-    "id": 326,
-    "tenantId": 10,
-    "items": [
-      {
-        "sku": {
-          "id": 169,
-          "contentId": 10,
-          "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
-          "code": "42AB600-1",
-          "listPrice": 69.5,
-          "salePrice": 69.5,
-          "brandCode": "Calvin Klein",
-          "contentCode": "42AB600",
-          "images": {
-            "large": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
-              "width": 385,
-              "height": 500
-            },
-            "medium": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
-              "width": 123,
-              "height": 160
-            },
-            "small": {
-              "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
-              "width": 58,
-              "height": 75
-            }
-          },
-          "options": [
-            {
-              "k": "Size",
-              "v": "26"
-            },
-            {
-              "k": "Color",
-              "v": "Monument"
-            }
-          ]
-        },
-        "quantity": 1,
-        "listPrice": 69.5,
-        "salePrice": 69.5,
-        "discount": 0
-      },
-      {
-        "sku": {
-          "id": 2454,
-          "contentId": 445,
-          "name": "EEAA8A011, 101, 000",
-          "code": "EEAA8A011101000",
-          "listPrice": 28,
-          "salePrice": 28,
-          "brandCode": "EE",
-          "contentCode": "EEAA8A011",
-          "images": null,
-          "options": [
-            {
-              "k": "Size",
-              "v": "(000)生产代表尺寸"
-            },
-            {
-              "k": "Color",
-              "v": "(101)red"
-            }
-          ]
-        },
-        "quantity": 2,
-        "listPrice": 56,
-        "salePrice": 44.8,
-        "discount": 11.2
-      }
-    ],
-    "listPrice": 125.5,
-    "salePrice": 114.3,
-    "quantity": 3,
-    "discount": 11.2,
-    "remainAmount": 114.3,
+    "id": 1349,
+    "tenantId": 12,
+    "listPrice": 1096,
+    "salePrice": 898,
+    "quantity": 2,
+    "discount": 198,
+    "remainAmount": 0,
     "customerInfo": {
-        "no": "10000000001",
-        "brandCode": "RC",
-        "mobile": "123456789021",
-        "grade": 0,
-        "cardType": "purpleCard",
-        "mileage": {
-            "currentPoints": 9000,
-            "totalEarnPoints": 10000,
-            "totalRedeemPoints": 10,
-            "totalSaleAmount": "345.0"
-        }
+      "id": 1065586,
+      "no": "0000053147",
+      "brandCode": "EE",
+      "mobile": "13818448893",
+      "grade": 3,
+      "cardType": "diamondCard",
+      "mileage": {
+        "currentPoints": 208,
+        "totalEarnPoints": 1108,
+        "totalRedeemPoints": 900,
+        "totalSaleAmount": 36330.94
+      },
+      "benefit": {
+        "mileage": 208,
+        "max_mileage_percent": 50,
+        "discount_percent": 5,
+        "max_discount_price": 0,
+        "birthday_discount_percent": 30,
+        "max_birthday_price": 5000
+      }
     },
-    "couponNo": "EE4E52FEF46F7B30DE",    
-    "discountInfo": {
+    "mileage": {
+      "current": 208,
+      "available": 208,
+      "use": 208
+    },
+    "couponInfo": {
+      "no": "EE4EEDE03E762A2AA2",
       "couponType": "Discount",
       "discountName": "8折优惠",
       "eventId": "EE2017030024"
     },
     "info": {
-        "casher": "nancy",
-        "receipt": "193018485875930103"
+      "receipt": "193018485875930103",
+      "casher": "nancy"
     },
-    "payments": null,
-    "userId": 1000001,
+    "payments": [
+      {
+        "method": "alipay",
+        "amount": 690
+      }
+    ],
+    "userId": 1000002,
     "spotId": 2000001,
-    "createdAt": "2017-03-29T07:47:02Z",
-    "updatedAt": "2017-03-29T08:12:44.017761577Z"
+    "createdAt": "2017-04-13T15:50:41Z",
+    "updatedAt": "2017-04-13T16:00:48.401563037Z",
+    "items": [
+      {
+        "sku": {
+          "id": 184184,
+          "contentId": 15579,
+          "name": "EERA72505B, (30)Yellow, (160)160",
+          "code": "EERA72505B30160",
+          "listPrice": 498,
+          "salePrice": 398,
+          "discountName": "8折优惠",
+          "brandCode": "EE",
+          "contentCode": "EE",
+          "images": {
+              "large": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                  "width": 385,
+                  "height": 500
+              },
+              "medium": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                  "width": 123,
+                  "height": 160
+              },
+              "small": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                  "width": 58,
+                  "height": 75
+              }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "(160)160"
+            },
+            {
+              "k": "Color",
+              "v": "(30)Yellow"
+            }
+          ]
+        },
+        "quantity": 1,
+        "listPrice": 498,
+        "salePrice": 398,
+        "discount": 100
+      },
+      {
+        "sku": {
+          "id": 184413,
+          "contentId": 15621,
+          "name": "EETA72553N, (59)Navy, (155)155",
+          "code": "EETA72553N59155",
+          "listPrice": 598,
+          "salePrice": 500,
+          "discountName": "EETA72553N Discount! ￥500",
+          "brandCode": "EE",
+          "contentCode": "EE",
+          "images": {
+              "large": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
+                  "width": 385,
+                  "height": 500
+              },
+              "medium": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
+                  "width": 123,
+                  "height": 160
+              },
+              "small": {
+                  "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
+                  "width": 58,
+                  "height": 75
+              }
+          },
+          "options": [
+            {
+              "k": "Size",
+              "v": "(155)155"
+            },
+            {
+              "k": "Color",
+              "v": "(59)Navy"
+            }
+          ]
+        },
+        "quantity": 1,
+        "listPrice": 598,
+        "salePrice": 500,
+        "discount": 98
+      }
+    ],
+    "suggests": [
+      {
+        "name": "EERA72505 Bundle Sale",
+        "desc": "",
+        "listPrice": 796,
+        "salePrice": 600,
+        "startAt": "2017-04-13T11:32:47Z",
+        "endAt": "2017-05-13T11:32:47Z",
+        "channelId": 0,
+        "virtualContents": [
+          {
+            "contentId": 15579,
+            "listPrice": 498,
+            "salePrice": 400
+          },
+          {
+            "contentId": 15628,
+            "listPrice": 298,
+            "salePrice": 200
+          }
+        ]
+      }
+    ]
   },
   "success": true,
   "error": {}

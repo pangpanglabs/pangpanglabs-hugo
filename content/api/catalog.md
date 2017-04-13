@@ -58,9 +58,8 @@ Success:
                 "name": "Calvin Klein Jeans Women's Garment Dyed Ankle Skinny Pant",
                 "desc": "<p>Mid-rise - sits below natural waist - skinny fit. Through hip and thigh - super skinny at ankle. Through waist, hip and thigh - skinny at ankle</p><p>Five-pocket styling with signature omega stitch on back pocket.</p><p>Zip fly with button closure</p><",
                 "listPrice": 69.5,
-                "salePrice": 69.5,
-                "lowestPrice": 0,
-                "highestPrice": 0,
+                "salePrice": 50,
+                "discountName": "Summer Promotion! ￥50",
                 "brandCode": "Calvin Klein",
                 "options": {
                     "Color": [
@@ -113,8 +112,7 @@ Success:
                 "desc": "<p>These utility shorts are comfortable and stylish. They pair well with a Calvin Klein tee for a modern look</p><p>Inseam: 3.5 inch</p><p>Features large front and back utility pockets which give this short a fashionable look</p><p>Button fly with zip clo",
                 "listPrice": 49.5,
                 "salePrice": 49.5,
-                "lowestPrice": 0,
-                "highestPrice": 0,
+                "discountName": "",
                 "brandCode": "Calvin Klein",
                 "options": {
                     "Color": [
@@ -194,9 +192,8 @@ Request:
     "name": "Calvin Klein Jeans Women's Garment Dyed Ankle Skinny Pant",
     "desc": "<p>Mid-rise - sits below natural waist - skinny fit. Through hip and thigh - super skinny at ankle. Through waist, hip and thigh - skinny at ankle</p><p>Five-pocket styling with signature omega stitch on back pocket.</p><p>Zip fly with button closure</p><",
     "listPrice": 69.5,
-    "salePrice": 69.5,
-    "lowestPrice": 0,
-    "highestPrice": 0,
+    "salePrice": 50,
+    "discountName": "Summer Promotion! ￥50",
     "brandCode": "Calvin Klein",
     "options": {
       "Color": [
@@ -327,7 +324,8 @@ Success:
                 "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Ivy Mist, 26",
                 "code": "42AB600-0",
                 "listPrice": 69.5,
-                "salePrice": 69.5,
+                "salePrice": 50,
+                "discountName": "Summer Promotion! ￥50",
                 "brandCode": "Calvin Klein",
                 "contentCode": "42AB600",
                 "images": {
@@ -364,7 +362,8 @@ Success:
                 "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
                 "code": "42AB600-1",
                 "listPrice": 69.5,
-                "salePrice": 69.5,
+                "salePrice": 50,
+                "discountName": "Summer Promotion! ￥50",
                 "brandCode": "Calvin Klein",
                 "contentCode": "42AB600",
                 "images": {
