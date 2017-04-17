@@ -255,15 +255,23 @@ Success:
 
 #### Parameters
 
-|Name|Required|Type|
-|---|---|---|
-|token|Yes|string|
+|Name|Required|Type|Desc|
+|---|---|---|---|
+|tenant|Yes|string| |
+|token|Yes|string|JWT token|
+
+- JWT token payload
+  - username
+  - spotname
+  - channelname
+- Secret
+  - YOUR_TENANT_SCRET
 
 #### Example
 
 Request: 
 
-`pp://staging/account/external-login?token=YOUR_CLIENT_SECRET_TOKEN`
+`pp://staging/account/external-login?tenant=YOUR_TENANT_NAME&token=JWT_TOKEN`
 
 Success:
 ```
