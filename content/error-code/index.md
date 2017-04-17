@@ -19,6 +19,7 @@ toc = true
 |106|Remote Call failed.|
 |107|`{name}` is required parameter.|
 |108|Invalid parameter|
+|109|Network Error|
 
 ## Account
 
