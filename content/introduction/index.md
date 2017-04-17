@@ -29,7 +29,14 @@ icon = "<b>1. </b>"
 
 ## Downloads
 
-### Current(v0.0.3)
+### Current(v0.0.4)
+
+- Android SDK  
+  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.4/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
+- iOS SDK  
+  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.4/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
+
+### v0.0.3
 
 - Android SDK  
   {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.3/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
