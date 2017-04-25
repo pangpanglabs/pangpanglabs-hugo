@@ -29,26 +29,30 @@ icon = "<b>1. </b>"
 
 ## Downloads
 
-### Current(v0.0.4)
+### Current(v0.0.5)
 
 - Android SDK  
-  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.4/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
+  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.5/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
 - iOS SDK  
-  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.4/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
+  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.5/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
 
-### v0.0.3
+## Archived versions
 
-- Android SDK  
-  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.3/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
-- iOS SDK  
-  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.3/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
-
-### v0.0.2
-
-- Android SDK  
-  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.2/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
-- iOS SDK  
-  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.2/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
+- 0.0.4
+  - Android SDK  
+    {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.4/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
+  - iOS SDK  
+    {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.4/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
+- v0.0.3
+  - Android SDK  
+    {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.3/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
+  - iOS SDK  
+    {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.3/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
+-  v0.0.2
+  - Android SDK  
+    {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.2/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
+  - iOS SDK  
+    {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.2/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
 
 
 <!--### Inventory management

@@ -59,8 +59,26 @@ Success:
                 "desc": "<p>Mid-rise - sits below natural waist - skinny fit. Through hip and thigh - super skinny at ankle. Through waist, hip and thigh - skinny at ankle</p><p>Five-pocket styling with signature omega stitch on back pocket.</p><p>Zip fly with button closure</p><",
                 "listPrice": 69.5,
                 "salePrice": 50,
-                "discountName": "Summer Promotion! ￥50",
+                "offerName": "Summer Promotion! ￥50",
                 "brandCode": "Calvin Klein",
+                "offers": [
+                    {
+                        "id": 8,
+                        "name": "Calvin Klein Hot Sale",
+                        "salePrice": 50,
+                        "channelName": "HANGUANG",
+                        "startAt": "2017-01-01T00:00:00Z",
+                        "endAt": "2017-05-31T00:00:00Z"
+                    },
+                    {
+                        "id": 9,
+                        "name": "All Brand 10% Discount",
+                        "salePrice": 62.55,
+                        "channelName": "HANGUANG",
+                        "startAt": "2017-01-01T00:00:00Z",
+                        "endAt": "2017-05-31T00:00:00Z"
+                    }
+                ],
                 "options": {
                     "Color": [
                         "Ivy Mist",
@@ -112,7 +130,7 @@ Success:
                 "desc": "<p>These utility shorts are comfortable and stylish. They pair well with a Calvin Klein tee for a modern look</p><p>Inseam: 3.5 inch</p><p>Features large front and back utility pockets which give this short a fashionable look</p><p>Button fly with zip clo",
                 "listPrice": 49.5,
                 "salePrice": 49.5,
-                "discountName": "",
+                "offerName": "",
                 "brandCode": "Calvin Klein",
                 "options": {
                     "Color": [
@@ -193,8 +211,26 @@ Request:
     "desc": "<p>Mid-rise - sits below natural waist - skinny fit. Through hip and thigh - super skinny at ankle. Through waist, hip and thigh - skinny at ankle</p><p>Five-pocket styling with signature omega stitch on back pocket.</p><p>Zip fly with button closure</p><",
     "listPrice": 69.5,
     "salePrice": 50,
-    "discountName": "Summer Promotion! ￥50",
+    "offerName": "Summer Promotion! ￥50",
     "brandCode": "Calvin Klein",
+    "offers": [
+        {
+            "id": 8,
+            "name": "Calvin Klein Hot Sale",
+            "salePrice": 50,
+            "channelName": "HANGUANG",
+            "startAt": "2017-01-01T00:00:00Z",
+            "endAt": "2017-05-31T00:00:00Z"
+        },
+        {
+            "id": 9,
+            "name": "All Brand 10% Discount",
+            "salePrice": 62.55,
+            "channelName": "HANGUANG",
+            "startAt": "2017-01-01T00:00:00Z",
+            "endAt": "2017-05-31T00:00:00Z"
+        }
+    ],
     "options": {
       "Color": [
         "Ivy Mist",
@@ -325,9 +361,27 @@ Success:
                 "code": "42AB600-0",
                 "listPrice": 69.5,
                 "salePrice": 50,
-                "discountName": "Summer Promotion! ￥50",
+                "offerName": "Summer Promotion! ￥50",
                 "brandCode": "Calvin Klein",
                 "contentCode": "42AB600",
+                "offers": [
+                    {
+                        "id": 8,
+                        "name": "Calvin Klein Hot Sale",
+                        "salePrice": 50,
+                        "channelName": "HANGUANG",
+                        "startAt": "2017-01-01T00:00:00Z",
+                        "endAt": "2017-05-31T00:00:00Z"
+                    },
+                    {
+                        "id": 9,
+                        "name": "All Brand 10% Discount",
+                        "salePrice": 62.55,
+                        "channelName": "HANGUANG",
+                        "startAt": "2017-01-01T00:00:00Z",
+                        "endAt": "2017-05-31T00:00:00Z"
+                    }
+                ],
                 "images": {
                     "large": {
                         "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
@@ -363,7 +417,7 @@ Success:
                 "code": "42AB600-1",
                 "listPrice": 69.5,
                 "salePrice": 50,
-                "discountName": "Summer Promotion! ￥50",
+                "offerName": "Summer Promotion! ￥50",
                 "brandCode": "Calvin Klein",
                 "contentCode": "42AB600",
                 "images": {

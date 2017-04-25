@@ -79,12 +79,13 @@ Fail:
 |cartId|Yes|number|
 |uid|Yes|string|
 |quantity|Yes|number|
+|offerId|No|number|
 
 #### Example
 
 Request: 
 
-`pp://staging/cart/add-item?cartId=1349&skuId=184184&quantity=2`
+`pp://staging/cart/add-item?cartId=1349&skuId=184184&quantity=2&offerId=8`
 
 Success:
 ```
@@ -119,7 +120,7 @@ Success:
           "code": "EERA72505B30160",
           "listPrice": 498,
           "salePrice": 498,
-          "discountName": "",
+          "offerName": "",
           "brandCode": "EE",
           "contentCode": "EE",
           "images": {
@@ -163,7 +164,7 @@ Success:
           "code": "EETA72553N59155",
           "listPrice": 598,
           "salePrice": 500,
-          "discountName": "EETA72553N Discount! ￥500",
+          "offerName": "EETA72553N Discount! ￥500",
           "brandCode": "EE",
           "contentCode": "EE",
           "images": {
@@ -194,6 +195,7 @@ Success:
             }
           ]
         },
+        "offerId": 8,
         "quantity": 2,
         "listPrice": 1196,
         "salePrice": 1000,
@@ -256,12 +258,13 @@ Fail:
 |cartId|Yes|number|
 |skuId|Yes|number|
 |quantity|Yes|number|
+|offerId|No|number|
 
 #### Example
 
 Request: 
 
-`pp://staging/cart/remove-item?cartId=1349&skuId=184184&quantity=1`
+`pp://staging/cart/remove-item?cartId=1349&skuId=184184&quantity=1&offerId=8`
 
 Success:
 ```
@@ -296,7 +299,7 @@ Success:
           "code": "EERA72505B30160",
           "listPrice": 498,
           "salePrice": 498,
-          "discountName": "",
+          "offerName": "",
           "brandCode": "EE",
           "contentCode": "EE",
           "images": {
@@ -340,7 +343,7 @@ Success:
           "code": "EETA72553N59155",
           "listPrice": 598,
           "salePrice": 500,
-          "discountName": "EETA72553N Discount! ￥500",
+          "offerName": "EETA72553N Discount! ￥500",
           "brandCode": "EE",
           "contentCode": "EE",
           "images": {
@@ -371,6 +374,7 @@ Success:
             }
           ]
         },
+        "offerId": 8,
         "quantity": 1,
         "listPrice": 598,
         "salePrice": 500,
@@ -492,7 +496,7 @@ Success:
           "code": "EERA72505B30160",
           "listPrice": 498,
           "salePrice": 498,
-          "discountName": "",
+          "offerName": "",
           "brandCode": "EE",
           "contentCode": "EE",
           "images": {
@@ -536,7 +540,7 @@ Success:
           "code": "EETA72553N59155",
           "listPrice": 598,
           "salePrice": 500,
-          "discountName": "EETA72553N Discount! ￥500",
+          "offerName": "EETA72553N Discount! ￥500",
           "brandCode": "EE",
           "contentCode": "EE",
           "images": {
@@ -662,7 +666,7 @@ Success:
     "couponInfo": {
       "no": "EE4EEDE03E762A2AA2",
       "couponType": "Discount",
-      "discountName": "8折优惠",
+      "offerName": "8折优惠",
       "eventId": "EE2017030024"
     },
     "info": null,
@@ -680,7 +684,7 @@ Success:
           "code": "EERA72505B30160",
           "listPrice": 498,
           "salePrice": 398,
-          "discountName": "8折优惠",
+          "offerName": "8折优惠",
           "brandCode": "EE",
           "contentCode": "EE",
           "images": {
@@ -724,7 +728,7 @@ Success:
           "code": "EETA72553N59155",
           "listPrice": 598,
           "salePrice": 500,
-          "discountName": "EETA72553N Discount! ￥500",
+          "offerName": "EETA72553N Discount! ￥500",
           "brandCode": "EE",
           "contentCode": "EE",
           "images": {
@@ -850,7 +854,7 @@ Success:
     "couponInfo": {
       "no": "EE4EEDE03E762A2AA2",
       "couponType": "Discount",
-      "discountName": "8折优惠",
+      "offerName": "8折优惠",
       "eventId": "EE2017030024"
     },
     "info": {
@@ -871,7 +875,7 @@ Success:
           "code": "EERA72505B30160",
           "listPrice": 498,
           "salePrice": 398,
-          "discountName": "8折优惠",
+          "offerName": "8折优惠",
           "brandCode": "EE",
           "contentCode": "EE",
           "images": {
@@ -915,7 +919,7 @@ Success:
           "code": "EETA72553N59155",
           "listPrice": 598,
           "salePrice": 500,
-          "discountName": "EETA72553N Discount! ￥500",
+          "offerName": "EETA72553N Discount! ￥500",
           "brandCode": "EE",
           "contentCode": "EE",
           "images": {
@@ -1039,7 +1043,7 @@ Success:
     "couponInfo": {
       "no": "EE4EEDE03E762A2AA2",
       "couponType": "Discount",
-      "discountName": "8折优惠",
+      "offerName": "8折优惠",
       "eventId": "EE2017030024"
     },
     "info": {
@@ -1060,7 +1064,7 @@ Success:
           "code": "EERA72505B30160",
           "listPrice": 498,
           "salePrice": 398,
-          "discountName": "8折优惠",
+          "offerName": "8折优惠",
           "brandCode": "EE",
           "contentCode": "EE",
           "images": {
@@ -1104,7 +1108,7 @@ Success:
           "code": "EETA72553N59155",
           "listPrice": 598,
           "salePrice": 500,
-          "discountName": "EETA72553N Discount! ￥500",
+          "offerName": "EETA72553N Discount! ￥500",
           "brandCode": "EE",
           "contentCode": "EE",
           "images": {
@@ -1230,7 +1234,7 @@ Success:
     "couponInfo": {
       "no": "EE4EEDE03E762A2AA2",
       "couponType": "Discount",
-      "discountName": "8折优惠",
+      "offerName": "8折优惠",
       "eventId": "EE2017030024"
     },
     "info": {
@@ -1256,7 +1260,7 @@ Success:
           "code": "EERA72505B30160",
           "listPrice": 498,
           "salePrice": 398,
-          "discountName": "8折优惠",
+          "offerName": "8折优惠",
           "brandCode": "EE",
           "contentCode": "EE",
           "images": {
@@ -1300,7 +1304,7 @@ Success:
           "code": "EETA72553N59155",
           "listPrice": 598,
           "salePrice": 500,
-          "discountName": "EETA72553N Discount! ￥500",
+          "offerName": "EETA72553N Discount! ￥500",
           "brandCode": "EE",
           "contentCode": "EE",
           "images": {
@@ -1541,7 +1545,7 @@ Success:
     "couponInfo": {
       "no": "EE4EEDE03E762A2AA2",
       "couponType": "Discount",
-      "discountName": "8折优惠",
+      "offerName": "8折优惠",
       "eventId": "EE2017030024"
     },
     "info": {
@@ -1567,7 +1571,7 @@ Success:
           "code": "EERA72505B30160",
           "listPrice": 498,
           "salePrice": 398,
-          "discountName": "8折优惠",
+          "offerName": "8折优惠",
           "brandCode": "EE",
           "contentCode": "EE",
           "images": {
@@ -1611,7 +1615,7 @@ Success:
           "code": "EETA72553N59155",
           "listPrice": 598,
           "salePrice": 500,
-          "discountName": "EETA72553N Discount! ￥500",
+          "offerName": "EETA72553N Discount! ￥500",
           "brandCode": "EE",
           "contentCode": "EE",
           "images": {
