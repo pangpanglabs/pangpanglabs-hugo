@@ -31,6 +31,7 @@ toc = true
 |203|Cannot get settings.|
 |204|Cannot save account to session storage.|
 |205|Current Spot is not set.|
+|206|Cannot set current spot.|
 
 ## Catalog
 
@@ -39,6 +40,7 @@ toc = true
 |300|Cannot search products.|
 |301|Cannot get the product(`{uid}`).|
 |302|Cannot download products.|
+|303|Product(`{uid}`) is not found.|
 
 ## Cart
 
@@ -53,6 +55,10 @@ toc = true
 |406|Cannot save current cart.|
 |407|Cannot set customer.|
 |408|Cannot set coupon.|
+|409|Coupon is invalid.|
+|410|Cannot set info.|
+|411|Cannot set payment.|
+|412|Cannot set salesman.|
 
 ## Order
 
@@ -61,3 +67,4 @@ toc = true
 |500|Cannot create order.|
 |501|Cannot get orders.|
 |502|Cannot find the order(`{id}`).|
+|503|Cannot return the order(`{id}`).|

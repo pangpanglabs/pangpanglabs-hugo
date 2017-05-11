@@ -22,67 +22,45 @@ Success:
 
 ```
 {
-  "result": {
-    "token": "YOUR_TOKEN",
-    "userId": 1000001,
-    "userName": "saleswoman",
-    "tenantId": 10,
-    "tenantCode": "LABS",
-    "tenantName": "LABS",
-    "spots": [
-      {
-        "id": 2000001,
-        "tenantId": 0,
-        "name": "Calvin Klein",
-        "contracts": [
-          {
-            "BrandCode": "Calvin Klein",
-            "ShopCode": "",
-            "IsChief": false
-          },
-          {
-            "BrandCode": "Ted Baker",
-            "ShopCode": "",
-            "IsChief": false
-          },
-          {
-            "BrandCode": "Lilly Pulitzer",
-            "ShopCode": "",
-            "IsChief": false
-          }
-        ]
-      },
-      {
-        "id": 2000002,
-        "tenantId": 0,
-        "name": "天山店",
-        "contracts": [
-          {
-            "BrandCode": "EE",
-            "ShopCode": "",
-            "IsChief": false
-          },
-          {
-            "BrandCode": "EK",
-            "ShopCode": "",
-            "IsChief": false
-          },
-          {
-            "BrandCode": "EA",
-            "ShopCode": "",
-            "IsChief": false
-          }
-        ]
-      }
-    ],
-    "roles": [
-      "salesman",
-      "manager"
-    ],
-    "currentSpotId": 2000001
-  },
-  "success": true,
-  "error": {}
+    "result": {
+        "userId": 11,
+        "userName": "HANGUANG-EE-C30R",
+        "tenantId": 5,
+        "tenantCode": "HANGUANG",
+        "tenantName": "HANGUANG",
+        "spots": [
+            {
+                "id": 26,
+                "channelId": 12,
+                "code": "EE-C30R",
+                "name": "EE 北京中友",
+                "colleagues": [
+                    {
+                        "userId": 19,
+                        "username": "7000056022",
+                        "displayName": "李桥秀"
+                    },
+                    {
+                        "userId": 17,
+                        "username": "7000041934",
+                        "displayName": "康小伐"
+                    },
+                    {
+                        "userId": 12,
+                        "username": "6000079545",
+                        "displayName": "武凯"
+                    }
+                ]
+            }
+        ],
+        "roles": [
+            "salesman"
+        ],
+        "currentSpotId": 26,
+        "currentChannelId": 12
+    },
+    "success": true,
+    "error": {}
 }
 ```
 
@@ -103,7 +81,7 @@ Fail:
 
 ## Get system information
 
-`/context/settings`
+`/context/system`
 
 #### Parameters
 
@@ -119,22 +97,22 @@ Success:
 
 ```
 {
-  "result": {
-    "setting": {
-      "system": {
-        "allowOffline": false,
-        "traceInterval": 10
-      },
-      "price": {
-        "roundDigit": 2,
-        "roundStrategy": "round",
-        "currency": "CYN"
-      }
+    "result": {
+        "version": "0.0.6",
+        "setting": {
+            "system": {
+                "allowOffline": false,
+                "traceInterval": 10
+            },
+            "price": {
+                "roundDigit": 2,
+                "roundStrategy": "round",
+                "currency": "CYN"
+            }
+        }        
     },
-    "version": "0.0.3"
-  },
-  "success": true,
-  "error": {}
+    "success": true,
+    "error": {}
 }
 ```
 

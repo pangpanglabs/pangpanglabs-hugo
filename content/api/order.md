@@ -15,137 +15,230 @@ toc = true
 |Name|Required|Type|
 |---|---|---|
 |cartId|Yes|number|
+|uid|No|string|
 
 #### Example
 
-Request: 
-
-`pp://staging/order/place-order?cartId=1`
+`pp://staging/order/place-order?cartId=1&uid=20170501138400031`
 
 Success:
 ```
 {
     "result": {
-        "id": 132,
-        "orderNo": "14907758150132",
-        "quantity": 3,
-        "listPrice": 125.5,
-        "salePrice": 114.3,
-        "discount": 11.2,
+        "id": 1212,
+        "orderNo": "14945206951212",
+        "uid": "20170501138400031",
+        "quantity": 4,
+        "listPrice": 3588,
+        "salePrice": 2511.6,
+        "discount": 1076.4,
         "items": [
             {
                 "seq": 1,
-                "skuId": 169,
+                "skuId": 184184,
                 "sku": {
-                    "id": 169,
-                    "contentId": 10,
-                    "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
-                    "code": "42AB600-1",
-                    "listPrice": 69.5,
-                    "salePrice": 69.5,
-                    "discountName": "",
-                    "brandCode": "Calvin Klein",
-                    "contentCode": "42AB600",
-                    "images": {
-                        "large": {
-                            "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
-                            "width": 385,
-                            "height": 500
-                        },
-                        "medium": {
-                            "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
-                            "width": 123,
-                            "height": 160
-                        },
-                        "small": {
-                            "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
-                            "width": 58,
-                            "height": 75
-                        }
-                    },
-                    "options": [
-                        {
-                            "k": "Size",
-                            "v": "26"
-                        },
-                        {
-                            "k": "Color",
-                            "v": "Monument"
-                        }
-                    ]
-                },
-                "quantity": 1,
-                "listPrice": 69.5,
-                "salePrice": 69.5,
-                "discount": 0
-            },
-            {
-                "seq": 2,
-                "skuId": 2454,
-                "sku": {
-                    "id": 2454,
-                    "contentId": 445,
-                    "name": "EEAA8A011, 101, 000",
-                    "code": "EEAA8A011101000",
-                    "listPrice": 28,
-                    "salePrice": 22.4,
-                    "discountName": "8折优惠",
-                    "brandCode": "EE",
-                    "contentCode": "EEAA8A011",
+                    "id": 184184,
+                    "contentId": 21673,
+                    "name": "EEYC64T51M, (62)Hunter, (160)160",
+                    "code": "EEYC64T51M62160",
                     "images": null,
                     "options": [
                         {
                             "k": "Size",
-                            "v": "(000)生产代表尺寸"
+                            "v": "(160)160"
                         },
                         {
                             "k": "Color",
-                            "v": "(101)red"
+                            "v": "(62)Hunter"
+                        }
+                    ],
+                    "brandCode": "EE",
+                    "contentCode": "EEYC64T51M",
+                    "listPrice": 598,
+                    "offers": [
+                        {
+                            "id": 1952,
+                            "name": "百货店vip 9折",
+                            "salePrice": 538.2,
+                            "channelName": "北京汉光",
+                            "startAt": "2017-05-01T00:00:00Z",
+                            "endAt": "2017-06-02T00:00:00Z",
+                            "requirement": {
+                                    "customerGroup": "VIP"
+                            }
                         }
                     ]
                 },
+                "offer": {
+                    "id": 1952,                    
+                    "name": "百货店vip 9折",
+                    "salePrice": 538.2,
+                    "channelName": "北京汉光",
+                    "startAt": "2017-05-01T00:00:00Z",
+                    "endAt": "2017-06-02T00:00:00Z",
+                    "requirement": {
+                                    "customerGroup": "VIP"
+                            }
+                },
                 "quantity": 2,
-                "listPrice": 56,
-                "salePrice": 44.8,
-                "discount": 11.2
+                "listPrice": 1196,
+                "salePrice": 1076.4,
+                "discount": 119.6
+            },
+            {
+                "seq": 2,
+                "skuId": 184184,
+                "sku": {
+                    "id": 184184,
+                    "contentId": 21673,
+                    "name": "EEYC64T51M, (62)Hunter, (160)160",
+                    "code": "EEYC64T51M62160",
+                    "images": null,
+                    "options": [
+                        {
+                            "k": "Size",
+                            "v": "(160)160"
+                        },
+                        {
+                            "k": "Color",
+                            "v": "(62)Hunter"
+                        }
+                    ],
+                    "brandCode": "EE",
+                    "contentCode": "EEYC64T51M",
+                    "listPrice": 598,
+                    "offers": [
+                        {
+                            "id": 1952,
+                            "code": "C108097",
+                            "name": "百货店vip 9折",
+                            "salePrice": 538.2,
+                            "channelId": 12,
+                            "channelName": "北京汉光",
+                            "startAt": "2017-05-01T00:00:00Z",
+                            "endAt": "2017-06-02T00:00:00Z",
+                            "requirement": {}
+                        }
+                    ]
+                },
+                "offer": null,
+                "quantity": 2,
+                "listPrice": 1196,
+                "salePrice": 717.6,
+                "discount": 478.4
+            },
+            {
+                "seq": 3,
+                "skuId": 186184,
+                "sku": {
+                    "id": 186184,
+                    "contentId": 24108,
+                    "name": "EETJ72403A, (52)D/Blue, (165)165",
+                    "code": "EETJ72403A52165",
+                    "images": null,
+                    "options": [
+                        {
+                            "k": "Size",
+                            "v": "(165)165"
+                        },
+                        {
+                            "k": "Color",
+                            "v": "(52)D/Blue"
+                        }
+                    ],
+                    "brandCode": "EE",
+                    "contentCode": "EETJ72403A",
+                    "listPrice": 598,
+                    "offers": [
+                        {
+                            "id": 1952,
+                            "code": "C108097",
+                            "name": "百货店vip 9折",
+                            "salePrice": 538.2,
+                            "channelId": 12,
+                            "channelName": "北京汉光",
+                            "startAt": "2017-05-01T00:00:00Z",
+                            "endAt": "2017-06-02T00:00:00Z",
+                            "requirement": {}
+                        }
+                    ]
+                },
+                "offer": null,
+                "quantity": 2,
+                "listPrice": 1196,
+                "salePrice": 717.6,
+                "discount": 478.4
             }
         ],
+        "customerId": 1065586,
         "couponInfo": {
-            "no": "EE4E52FEF46F7B30DE",
-            "couponType": "Discount",            
-            "discountName": "8折优惠",
-            "eventId": "EE2017030024"
-        }
+            "no": "EEB5AA500E8539665E",
+            "title": "多级折扣型",
+            "desc": "多级折扣型",
+            "startAt": "2017-05-02T16:00:00Z",
+            "endAt": "2017-06-01T15:59:59Z",
+            "enable": true,
+            "couponType": "Discount",
+            "eventId": "EE2017050013",
+            "offerName": "多级折扣型"
+        },
         "customerInfo": {
             "id": 1065586,
             "no": "0000053147",
             "brandCode": "EE",
             "mobile": "13818448893",
             "grade": 3,
-            "cardType": "purpleCard",
+            "cardType": "diamondCard",
             "mileage": {
-                "currentPoints": 9000,
-                "totalEarnPoints": 10000,
-                "totalRedeemPoints": 10,
-                "totalSaleAmount": "345.0"
+                "currentPoints": 78,
+                "totalEarnPoints": 1227,
+                "totalRedeemPoints": 1149,
+                "totalSaleAmount": 39422.94
+            },
+            "benefit": {
+                "mileage": 78,
+                "max_mileage_percent": 50,
+                "discount_percent": 5,
+                "max_discount_price": 0,
+                "birthday_discount_percent": 0,
+                "max_birthday_price": 0
             }
         },
-        "mileage": {        
-            "use": 0
+        "mileage": {
+            "current": 78,
+            "available": 78,
+            "use": 78
         },
         "info": {
-            "casher": "nancy",
-            "receipt": "193018485875930103"
-        },        
+            "cashierName": "6000026999",
+            "chiefBrandCode": "EE",
+            "shopCode": "C30R",
+            "shopInfo": [
+                {
+                    "brandCode": "EE",
+                    "isChief": true,
+                    "shopCode": "C30R"
+                }
+            ]
+        },
         "payments": [
-        {
-            "method": "alipay",
-            "amount": 114.3
-        }
-        "userId": 1000001,
-        "spotId": 2000001,
-        "tenantId": 12,
-        "createdAt": "2017-03-29T08:23:35.27528848Z"
+            {
+                "method": "ALIPAY",
+                "amount": 50
+            },
+            {
+                "method": "WXPAY",
+                "amount": 350
+            },
+            {
+                "method": "CASH",
+                "amount": 1000
+            }
+        ],
+        "userId": 14,        
+        "spotId": 26,
+        "tenantId": 4,
+        "createdAt": "2017-05-11T16:38:15.499788223Z"
     },
     "success": true,
     "error": {}
@@ -167,139 +260,8 @@ Success:
 
 #### Example
 
-Request: 
-
 `pp://staging/order/get-order?orderId=132`
 
-Success:
-```
-{
-    "result": {
-        "id": 132,
-        "orderNo": "14907758150132",
-        "quantity": 3,
-        "listPrice": 125.5,
-        "salePrice": 114.3,
-        "discount": 11.2,
-        "items": [
-            {
-                "seq": 1,
-                "skuId": 169,
-                "sku": {
-                    "id": 169,
-                    "contentId": 10,
-                    "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
-                    "code": "42AB600-1",
-                    "listPrice": 69.5,
-                    "salePrice": 69.5,
-                    "discountName": "",
-                    "brandCode": "Calvin Klein",
-                    "contentCode": "42AB600",
-                    "images": {
-                        "large": {
-                            "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
-                            "width": 385,
-                            "height": 500
-                        },
-                        "medium": {
-                            "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
-                            "width": 123,
-                            "height": 160
-                        },
-                        "small": {
-                            "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
-                            "width": 58,
-                            "height": 75
-                        }
-                    },
-                    "options": [
-                        {
-                            "k": "Size",
-                            "v": "26"
-                        },
-                        {
-                            "k": "Color",
-                            "v": "Monument"
-                        }
-                    ]
-                },
-                "quantity": 1,
-                "listPrice": 69.5,
-                "salePrice": 69.5,
-                "discount": 0
-            },
-            {
-                "seq": 2,
-                "skuId": 2454,
-                "sku": {
-                    "id": 2454,
-                    "contentId": 445,
-                    "name": "EEAA8A011, 101, 000",
-                    "code": "EEAA8A011101000",
-                    "listPrice": 28,
-                    "salePrice": 22.4,
-                    "discountName": "8折优惠",
-                    "brandCode": "EE",
-                    "contentCode": "EEAA8A011",
-                    "images": null,
-                    "options": [
-                        {
-                            "k": "Size",
-                            "v": "(000)生产代表尺寸"
-                        },
-                        {
-                            "k": "Color",
-                            "v": "(101)red"
-                        }
-                    ]
-                },
-                "quantity": 2,
-                "listPrice": 56,
-                "salePrice": 44.8,
-                "discount": 11.2
-            }
-        ],
-        "couponInfo": {
-            "no": "EE4E52FEF46F7B30DE",
-            "couponType": "Discount",            
-            "discountName": "8折优惠",
-            "eventId": "EE2017030024"
-        }
-        "customerInfo": {
-            "id": 1065586,
-            "no": "0000053147",
-            "brandCode": "EE",
-            "mobile": "13818448893",
-            "grade": 3,
-            "cardType": "purpleCard",
-            "mileage": {
-                "currentPoints": 9000,
-                "totalEarnPoints": 10000,
-                "totalRedeemPoints": 10,
-                "totalSaleAmount": "345.0"
-            }
-        },
-        "mileage": {        
-            "use": 0
-        },
-        "info": {
-            "casher": "nancy",
-            "receipt": "193018485875930103"
-        },        
-        "payments": [
-        {
-            "method": "alipay",
-            "amount": 114.3
-        }
-        "userId": 1000001,
-        "spotId": 2000001,
-        "tenantId": 12,
-        "createdAt": "2017-03-29T08:23:35.27528848Z"
-    },
-    "success": true,
-    "error": {}
-}
-```
 
 ---
 
@@ -314,64 +276,23 @@ Success:
 |---|---|---|
 |skipCount|No|number|
 |maxResultCount|No|number|
+|startAt|No|string|
+|endAt|No|string|
 
 #### Example
 
 Request: 
 
-`pp://staging/order/all-orders?skipCount=0&maxResultCount=10`
+`pp://staging/order/all-orders?skipCount=0&maxResultCount=10&startAt=2017-05-01&endAt=2017-05-31`
 
 Success:
 ```
 {
     "result": {
         "items": [
-            {
-                "id": 132,
-                "orderNo": "14907758150132",
-                "quantity": 3,
-                "listPrice": 125.5,
-                "salePrice": 114.3,
-                "discount": 11.2,                
-                "couponInfo": {
-                    "no": "EE4E52FEF46F7B30DE",
-                    "couponType": "Discount",            
-                    "discountName": "8折优惠",
-                    "eventId": "EE2017030024"
-                }
-                "customerInfo": {
-                    "id": 1065586,
-                    "no": "0000053147",
-                    "brandCode": "EE",
-                    "mobile": "13818448893",
-                    "grade": 3,
-                    "cardType": "purpleCard",
-                    "mileage": {
-                        "currentPoints": 9000,
-                        "totalEarnPoints": 10000,
-                        "totalRedeemPoints": 10,
-                        "totalSaleAmount": "345.0"
-                    }
-                },
-                "mileage": {        
-                    "use": 0
-                },
-                "info": {
-                    "casher": "nancy",
-                    "receipt": "193018485875930103"
-                },        
-                "payments": [
-                {
-                    "method": "alipay",
-                    "amount": 114.3
-                }
-                "userId": 1000001,
-                "spotId": 2000001,
-                "tenantId": 12,
-                "createdAt": "2017-03-29T08:23:35Z"
-            }            
+            /* ... */         
         ],
-        "totalCount": 1
+        "totalCount": 28
     },
     "success": true,
     "error": {}
@@ -388,139 +309,8 @@ Success:
 |Name|Required|Type|
 |---|---|---|
 |orderId|Yes|number|
+|uid|No|string|
 
 #### Example
 
-Request: 
-
-`pp://staging/order/return?orderId=132`
-
-Success:
-```
-{
-    "result": {
-        "id": 132,
-        "orderNo": "14907758150132",
-        "quantity": -3,
-        "listPrice": -125.5,
-        "salePrice": -114.3,
-        "discount": -11.2,
-        "items": [
-            {
-                "seq": 1,
-                "skuId": 169,
-                "sku": {
-                    "id": 169,
-                    "contentId": 10,
-                    "name": "Calvin Klein Jeans Women's Gmt Dyed Ankle Skinny Pant, Monument, 26",
-                    "code": "42AB600-1",
-                    "listPrice": 69.5,
-                    "salePrice": 69.5,
-                    "discountName": "",
-                    "brandCode": "Calvin Klein",
-                    "contentCode": "42AB600",
-                    "images": {
-                        "large": {
-                            "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL.jpg",
-                            "width": 385,
-                            "height": 500
-                        },
-                        "medium": {
-                            "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL160_.jpg",
-                            "width": 123,
-                            "height": 160
-                        },
-                        "small": {
-                            "url": "https://images-na.ssl-images-amazon.com/images/I/310neZo0MKL._SL75_.jpg",
-                            "width": 58,
-                            "height": 75
-                        }
-                    },
-                    "options": [
-                        {
-                            "k": "Size",
-                            "v": "26"
-                        },
-                        {
-                            "k": "Color",
-                            "v": "Monument"
-                        }
-                    ]
-                },
-                "quantity": -1,
-                "listPrice": -69.5,
-                "salePrice": -69.5,
-                "discount": 0
-            },
-            {
-                "seq": 2,
-                "skuId": 2454,
-                "sku": {
-                    "id": 2454,
-                    "contentId": 445,
-                    "name": "EEAA8A011, 101, 000",
-                    "code": "EEAA8A011101000",
-                    "listPrice": 28,
-                    "salePrice": 22.4,
-                    "discountName": "8折优惠",
-                    "brandCode": "EE",
-                    "contentCode": "EEAA8A011",
-                    "images": null,
-                    "options": [
-                        {
-                            "k": "Size",
-                            "v": "(000)生产代表尺寸"
-                        },
-                        {
-                            "k": "Color",
-                            "v": "(101)red"
-                        }
-                    ]
-                },
-                "quantity": -2,
-                "listPrice": -56,
-                "salePrice": -44.8,
-                "discount": -11.2
-            }
-        ],
-        "couponInfo": {
-            "no": "EE4E52FEF46F7B30DE",
-            "couponType": "Discount",            
-            "discountName": "8折优惠",
-            "eventId": "EE2017030024"
-        }
-        "customerInfo": {
-            "id": 1065586,
-            "no": "0000053147",
-            "brandCode": "EE",
-            "mobile": "13818448893",
-            "grade": 3,
-            "cardType": "purpleCard",
-            "mileage": {
-                "currentPoints": 9000,
-                "totalEarnPoints": 10000,
-                "totalRedeemPoints": 10,
-                "totalSaleAmount": "345.0"
-            }
-        },
-        "mileage": {        
-            "use": 0
-        },
-        "info": {
-            "casher": "nancy",
-            "receipt": "193018485875930103"
-        },        
-        "payments": [
-        {
-            "method": "alipay",
-            "amount": -114.3
-        }
-        "userId": 1000001,
-        "spotId": 2000001,
-        "tenantId": 12,
-        "createdAt": "2017-03-29T08:23:35.27528848Z"
-    },
-    "success": true,
-    "error": {}
-}
-```
+`pp://staging/order/return?orderId=132&uid=1705021039402`

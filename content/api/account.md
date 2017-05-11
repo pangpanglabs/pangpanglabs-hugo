@@ -25,54 +25,45 @@ Request:
 Success:
 ```
 {
-  "result": {
-    "token": "YOUR_TOKEN",
-    "userId": 1000001,
-    "userName": "saleswoman",
-    "tenantId": 10,
-    "tenantCode": "LABS",
-    "tenantName": "LABS",
-    "spots": [
-      {
-        "id": 2000001,
-        "tenantId": 0,
-        "name": "Event Hall",
-        "contracts": [
-          {
-            "BrandCode": "Calvin Klein",
-          },
-          {
-            "BrandCode": "Ted Baker",
-          },
-          {
-            "BrandCode": "Lilly Pulitzer",
-          }
-        ]
-      },
-      {
-        "id": 2000002,
-        "tenantId": 0,
-        "name": "天山店",
-        "contracts": [
-          {
-            "BrandCode": "EE",
-          },
-          {
-            "BrandCode": "EK",
-          },
-          {
-            "BrandCode": "EA",
-          }
-        ]
-      }
-    ],
-    "roles": [
-      "salesman",
-      "manager"
-    ]
-  },
-  "success": true,
-  "error": {}
+    "result": {
+        "userId": 11,
+        "userName": "HANGUANG-EE-C30R",
+        "tenantId": 5,
+        "tenantCode": "HANGUANG",
+        "tenantName": "HANGUANG",
+        "spots": [
+            {
+                "id": 26,
+                "channelId": 12,
+                "code": "EE-C30R",
+                "name": "EE 北京中友",
+                "colleagues": [
+                    {
+                        "userId": 19,
+                        "username": "7000056022",
+                        "displayName": "李桥秀"
+                    },
+                    {
+                        "userId": 17,
+                        "username": "7000041934",
+                        "displayName": "康小伐"
+                    },
+                    {
+                        "userId": 12,
+                        "username": "6000079545",
+                        "displayName": "武凯"
+                    }
+                ]
+            }
+        ],
+        "roles": [
+            "salesman"
+        ],
+        "currentSpotId": 26,
+        "currentChannelId": 12
+    },
+    "success": true,
+    "error": {}
 }
 ```
 
@@ -80,12 +71,12 @@ Fail:
 
 ```
 {
-  "success": false,
-  "result": null,
-  "error": {
-    "code": 201,
-    "message": "Login Failed. Invalid user name or password"
-  }
+    "result": null,
+    "success": false,
+    "error": {
+        "code": 201,
+        "message": "Login Failed.\nInvalid password."
+    }
 }
 ```
 
@@ -109,54 +100,45 @@ Success:
 
 ```
 {
-  "result": {
-    "token": "YOUR_TOKEN",
-    "userId": 1000001,
-    "userName": "saleswoman",
-    "tenantId": 10,
-    "tenantCode": "LABS",
-    "tenantName": "LABS",
-    "spots": [
-      {
-        "id": 2000001,
-        "tenantId": 0,
-        "name": "Event Hall",
-        "contracts": [
-          {
-            "BrandCode": "Calvin Klein",
-          },
-          {
-            "BrandCode": "Ted Baker",
-          },
-          {
-            "BrandCode": "Lilly Pulitzer",
-          }
-        ]
-      },
-      {
-        "id": 2000002,
-        "tenantId": 0,
-        "name": "天山店",
-        "contracts": [
-          {
-            "BrandCode": "EE",
-          },
-          {
-            "BrandCode": "EK",
-          },
-          {
-            "BrandCode": "EA",
-          }
-        ]
-      }
-    ],
-    "roles": [
-      "salesman",
-      "manager"
-    ]
-  },
-  "success": true,
-  "error": {}
+    "result": {
+        "userId": 11,
+        "userName": "HANGUANG-EE-C30R",
+        "tenantId": 5,
+        "tenantCode": "HANGUANG",
+        "tenantName": "HANGUANG",
+        "spots": [
+            {
+                "id": 26,
+                "channelId": 12,
+                "code": "EE-C30R",
+                "name": "EE 北京中友",
+                "colleagues": [
+                    {
+                        "userId": 19,
+                        "username": "7000056022",
+                        "displayName": "李桥秀"
+                    },
+                    {
+                        "userId": 17,
+                        "username": "7000041934",
+                        "displayName": "康小伐"
+                    },
+                    {
+                        "userId": 12,
+                        "username": "6000079545",
+                        "displayName": "武凯"
+                    }
+                ]
+            }
+        ],
+        "roles": [
+            "salesman"
+        ],
+        "currentSpotId": 26,
+        "currentChannelId": 12
+    },
+    "success": true,
+    "error": {}
 }
 ```
 
@@ -174,7 +156,7 @@ Fail:
 ```
 ---
 
-## Set Spot
+<!--## Set Spot
 
 `/account/set-spot`
 
@@ -245,7 +227,7 @@ Success:
   "success": true,
   "error": {}
 }
-```
+```-->
 
 ---
 
@@ -261,9 +243,8 @@ Success:
 |token|Yes|string|JWT token|
 
 - JWT token payload
-  - username
-  - spotname
-  - channelname
+  - brandCode
+  - shopCode
 - Secret
   - YOUR_TENANT_SCRET
 
@@ -276,54 +257,45 @@ Request:
 Success:
 ```
 {
-  "result": {
-    "token": "YOUR_TOKEN",
-    "userId": 1000001,
-    "userName": "saleswoman",
-    "tenantId": 10,
-    "tenantCode": "LABS",
-    "tenantName": "LABS",
-    "spots": [
-      {
-        "id": 2000001,
-        "tenantId": 0,
-        "name": "Event Hall",
-        "contracts": [
-          {
-            "BrandCode": "Calvin Klein",
-          },
-          {
-            "BrandCode": "Ted Baker",
-          },
-          {
-            "BrandCode": "Lilly Pulitzer",
-          }
-        ]
-      },
-      {
-        "id": 2000002,
-        "tenantId": 0,
-        "name": "天山店",
-        "contracts": [
-          {
-            "BrandCode": "EE",
-          },
-          {
-            "BrandCode": "EK",
-          },
-          {
-            "BrandCode": "EA",
-          }
-        ]
-      }
-    ],
-    "roles": [
-      "salesman",
-      "manager"
-    ]
-  },
-  "success": true,
-  "error": {}
+    "result": {
+        "userId": 11,
+        "userName": "HANGUANG-EE-C30R",
+        "tenantId": 5,
+        "tenantCode": "HANGUANG",
+        "tenantName": "HANGUANG",
+        "spots": [
+            {
+                "id": 26,
+                "channelId": 12,
+                "code": "EE-C30R",
+                "name": "EE 北京中友",
+                "colleagues": [
+                    {
+                        "userId": 19,
+                        "username": "7000056022",
+                        "displayName": "李桥秀"
+                    },
+                    {
+                        "userId": 17,
+                        "username": "7000041934",
+                        "displayName": "康小伐"
+                    },
+                    {
+                        "userId": 12,
+                        "username": "6000079545",
+                        "displayName": "武凯"
+                    }
+                ]
+            }
+        ],
+        "roles": [
+            "salesman"
+        ],
+        "currentSpotId": 26,
+        "currentChannelId": 12
+    },
+    "success": true,
+    "error": {}
 }
 ```
 

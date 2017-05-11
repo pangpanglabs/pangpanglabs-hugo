@@ -32,7 +32,11 @@ String result = Pos.call("pp://staging/account/login?tenant=LABS&username=salesm
 > ### Setting
 >
 > #### Download
->  - Current(v0.0.5)
+>  - Current(v0.0.7)
+>  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.7/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
+>  - v0.0.6
+>  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.6/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
+>  - v0.0.5
 >  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.5/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
 >  - v0.0.4
 >  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.4/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
