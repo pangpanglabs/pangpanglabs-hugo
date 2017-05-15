@@ -262,7 +262,7 @@ None
 |Name|Required|Type|
 |---|---|---|
 |cartId|Yes|number|
-|uid|Yes|string|
+|skuId|Yes|number|
 |quantity|Yes|number|
 |offerId|No|number|
 
