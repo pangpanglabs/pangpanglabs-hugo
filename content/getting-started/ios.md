@@ -44,7 +44,9 @@ NSString* result = P2PosCall(@"pp://staging/account/login?tenant=LABS&username=s
 > ### Setting
 >
 > #### Download
->  - Current(v0.0.7)
+>  - Current(v0.1.0)
+>  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.0/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
+>  - v0.0.7
 >  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.7/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
 >  - v0.0.6
 >  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.6/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}

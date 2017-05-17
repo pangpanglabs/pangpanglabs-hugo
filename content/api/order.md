@@ -14,7 +14,7 @@ toc = true
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|number|
+|cartId|Yes|string|
 |uid|No|string|
 
 #### Example
@@ -25,7 +25,7 @@ Success:
 ```
 {
     "result": {
-        "id": 1212,
+        "id": "1212",
         "orderNo": "14945206951212",
         "uid": "20170501138400031",
         "quantity": 4,
@@ -256,7 +256,7 @@ Success:
 
 |Name|Required|Type|
 |---|---|---|
-|orderId|Yes|number|
+|orderId|Yes|string|
 
 #### Example
 
@@ -308,7 +308,7 @@ Success:
 
 |Name|Required|Type|
 |---|---|---|
-|orderId|Yes|number|
+|orderId|Yes|string|
 |uid|No|string|
 
 #### Example

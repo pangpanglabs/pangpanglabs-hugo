@@ -9,7 +9,7 @@ toc = true
 ```
 {
     "result": {
-        "id": 3520,
+        "id": "3520",
         "tenantId": 4,
         "listPrice": 3588,
         "salePrice": 2511.6,
@@ -73,7 +73,7 @@ toc = true
         ],
         "items": [
             {
-                "id": 4638,
+                "id": "4638",
                 "sku": {
                     "id": 184184,
                     "contentId": 21673,
@@ -122,7 +122,7 @@ toc = true
                 "discount": 119.6
             },
             {
-                "id": 4639,
+                "id": "4639",
                 "sku": {
                     "id": 184184,
                     "contentId": 21673,
@@ -162,7 +162,7 @@ toc = true
                 "discount": 478.4
             },
             {
-                "id": 4640,
+                "id": "4640",
                 "sku": {
                     "id": 186184,
                     "contentId": 24108,
@@ -261,7 +261,7 @@ None
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|number|
+|cartId|Yes|string|
 |skuId|Yes|number|
 |quantity|Yes|number|
 |offerId|No|number|
@@ -282,7 +282,7 @@ None
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|number|
+|cartId|Yes|string|
 |skuId|Yes|number|
 |quantity|Yes|number|
 |offerId|No|number|
@@ -301,8 +301,8 @@ None
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|number|
-|itemId|Yes|number|
+|cartId|Yes|string|
+|itemId|Yes|string|
 |offerId|Yes|number|
 
 #### Example
@@ -319,7 +319,7 @@ None
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|number|
+|cartId|Yes|string|
 |no|Yes|string|
 
 #### Example
@@ -336,7 +336,7 @@ None
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|number|
+|cartId|Yes|string|
 |no|Yes|string|
 
 #### Example
@@ -353,7 +353,7 @@ None
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|number|
+|cartId|Yes|string|
 |`key`|Yes|string|
 
 #### Example
@@ -369,7 +369,7 @@ None
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|number|
+|cartId|Yes|string|
 |amount|Yes|number|
 
 #### Example
@@ -386,7 +386,7 @@ None
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|number|
+|cartId|Yes|string|
 |method|Yes|string|
 |amount|Yes|number|
 
@@ -402,7 +402,7 @@ None
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|number|
+|cartId|Yes|string|
 
 #### Example
 
@@ -436,7 +436,7 @@ None
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|number|
+|cartId|Yes|string|
 
 #### Example
 
@@ -452,7 +452,7 @@ None
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|number|
+|cartId|Yes|string|
 |salesmanId|Yes|number|
 
 #### Example

@@ -65,6 +65,9 @@ toc = true
 |Code|Description|
 |---|---|
 |500|Cannot create order.|
-|501|Cannot get orders.|
-|502|Cannot find the order(`{id}`).|
+|501|Cannot search orders.|
+|502|The order is not exist.|
 |503|Cannot return the order(`{id}`).|
+|504|The order has canceled.|
+|505|The order status is invalid.|
+
