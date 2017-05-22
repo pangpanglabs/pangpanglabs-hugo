@@ -256,7 +256,10 @@ Success:
 
 |Name|Required|Type|
 |---|---|---|
-|orderId|Yes|string|
+|orderId|-|string|
+|uid|-|string|
+
+**Either `orderId` or `uid` is a required.**
 
 #### Example
 
@@ -308,9 +311,12 @@ Success:
 
 |Name|Required|Type|
 |---|---|---|
-|orderId|Yes|string|
+|parentOrderId|-|string|
+|parentUid|-|string|
 |uid|No|string|
+
+**Either `parentOrderId` or `parentUid` is a required.**
 
 #### Example
 
-`pp://staging/order/return?orderId=132&uid=1705021039402`
+`pp://staging/order/return?parentOrderId=132&uid=1705021039402`

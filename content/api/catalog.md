@@ -541,6 +541,9 @@ Success:
 |id|-|number|-|
 |uid|-|string|barcode number|
 
+**Either `id` or `uid` is a required.**
+
+
 #### Example
 
 Request: 
