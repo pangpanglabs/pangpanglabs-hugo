@@ -257,9 +257,10 @@ Success:
 |Name|Required|Type|
 |---|---|---|
 |orderId|-|string|
+|orderNo|-|string|
 |uid|-|string|
 
-**Either `orderId` or `uid` is a required.**
+**One of `orderId`, `orderNo` or `uid` is a required.**
 
 #### Example
 
@@ -312,11 +313,51 @@ Success:
 |Name|Required|Type|
 |---|---|---|
 |parentOrderId|-|string|
+|parentOrderNo|-|string|
 |parentUid|-|string|
 |uid|No|string|
 
-**Either `parentOrderId` or `parentUid` is a required.**
+**One of `parentOrderId`, `parentOrderNo` or `parentUid` is a required.**
 
 #### Example
 
 `pp://staging/order/return?parentOrderId=132&uid=1705021039402`
+
+## Return order and resale
+
+`/order/return-and-resale`
+
+#### Parameters
+
+
+|Name|Required|Type|
+|---|---|---|
+|parentOrderId|-|string|
+|parentOrderNo|-|string|
+|parentUid|-|string|
+|uid|No|string|
+|items[`seq`]|Yes|integer|
+
+**One of `parentOrderId`, `parentOrderNo` or `parentUid` is a required.**
+
+#### Example
+
+Request: 
+
+`pp://staging/order/return-and-resale?parentOrderId=132&uid=1705021039402&items[2]=2&items[1]=1`
+
+Success:
+```
+{
+    "result": {
+        "order": {
+            /* returned order */
+        },
+        "cart": {
+            /* resale cart */
+        }
+    },
+    "success": true,
+    "error": {}
+}
+```
