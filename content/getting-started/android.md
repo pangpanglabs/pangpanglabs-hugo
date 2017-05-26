@@ -32,20 +32,11 @@ String result = Pos.call("pp://staging/account/login?tenant=LABS&username=salesm
 > ### Setting
 >
 > #### Download
->  - Current(v0.1.0)
->  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.0/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
->  - 0.0.7
->  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.7/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
->  - v0.0.6
->  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.6/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
->  - v0.0.5
->  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.5/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
->  - v0.0.4
->  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.4/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
->  - v0.0.3
->  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.3/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
->  - v0.0.2
->  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.2/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
+>  - Current(v0.1.1)
+>  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.1/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
+>
+>  - Archived versions
+>  {{% button href="https://pangpanglabs.github.io/introduction/#archived-versions" icon="fa fa-external-link" %}}click{{% /button %}}
 >
 > #### In Project Structure
 > 

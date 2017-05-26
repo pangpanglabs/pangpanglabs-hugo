@@ -44,20 +44,11 @@ NSString* result = P2PosCall(@"pp://staging/account/login?tenant=LABS&username=s
 > ### Setting
 >
 > #### Download
->  - Current(v0.1.0)
->  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.0/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
->  - v0.0.7
->  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.7/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
->  - v0.0.6
->  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.6/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
->  - v0.0.5
->  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.5/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
->  - v0.0.4
->  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.4/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
->  - v0.0.3
->  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.3/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
->  - v0.0.2
->  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.0.2/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
+>  - Current(v0.1.1)
+>  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.1/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
+>
+>  - Archived versions
+>  {{% button href="https://pangpanglabs.github.io/introduction/#archived-versions" icon="fa fa-external-link" %}}click{{% /button %}}
 >
 > #### Project Setting
 >
