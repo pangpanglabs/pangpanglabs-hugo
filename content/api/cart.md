@@ -458,3 +458,18 @@ None
 #### Example
 
 `pp://staging/cart/set-salesman?cartId=1349&salesmanId=58`
+
+## Clear cart
+
+ 
+`/cart/clear-cart`
+
+#### Parameters
+
+|Name|Required|Type|
+|---|---|---|
+|cartId|Yes|string|
+
+#### Example
+
+`pp://staging/cart/clear-cart?cartId=1349`
