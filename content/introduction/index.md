@@ -29,25 +29,20 @@ icon = "<b>1. </b>"
 
 ## Downloads
 
-#### Current(v0.1.2)
+### Current(v0.1.2)
+
+This release fixes issue parsing error   
+and adds `/cart/clear-cart` API.
 
 
-
-> - New Features:  
->   - Adds `/cart/clear-cart` API
-> - Bug Fixes:
->   - Fixes issue error parsing
-
-
-- Android SDK:  
+- Android SDK  
   {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.2/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
-- iOS SDK:  
+- iOS SDK  
   {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.2/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
 
-#### v0.1.1
+### v0.1.1
 
-> - Improvements:
->   - Graceful error handling.
+This release adds graceful error handling.
 
 - Android SDK  
   {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.1/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
@@ -55,7 +50,7 @@ icon = "<b>1. </b>"
   {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.1/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
 
 
-#### Archived versions
+### Archived versions
 
 |Version|Android|iOS|
 |---|---|---|
