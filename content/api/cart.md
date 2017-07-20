@@ -24,6 +24,7 @@ toc = true
         "catalogOffers": [
             {
                 "id": 11842,
+                "code": "S2142926",
                 "name": "16年5折"
             }
         ],
@@ -99,6 +100,7 @@ toc = true
                 "cartOffers": null,
                 "catalogOffer": {
                     "id": 11842,
+                    "code": "S2142926",
                     "name": "16年5折"
                 },
                 "offer": {                             // DEPRECATED
