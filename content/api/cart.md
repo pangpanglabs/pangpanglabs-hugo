@@ -9,201 +9,277 @@ toc = true
 ```
 {
     "result": {
-        "id": "3520",
-        "tenantId": 4,
-        "listPrice": 3588,
-        "salePrice": 2511.6,
+        "id": "219",
+        "tenantId": 2,
+        "channelId": 1218,
+        "userId": 55,
+        "salesmanId": 55,
+        "spotId": 13,
+        "listPrice": 1592,
+        "salePrice": 1194,
         "quantity": 4,
-        "discount": 1076.4,
-        "remainAmount": 1033.6,
+        "discount": 398,
+        "remainAmount": 1094,
+        "cartOffers": null,
+        "catalogOffers": [
+            {
+                "id": 11842,
+                "name": "16年5折"
+            }
+        ],
         "customerInfo": {
-            "id": 1065586,
-            "no": "0000053147",
-            "brandCode": "EE",
-            "mobile": "13818448893",
-            "grade": 3,
-            "cardType": "diamondCard",
-            "mileage": {
-                "currentPoints": 78,
-                "totalEarnPoints": 1227,
-                "totalRedeemPoints": 1149,
-                "totalSaleAmount": 39422.94
-            },
             "benefit": {
-                "mileage": 78,
-                "max_mileage_percent": 50,
-                "discount_percent": 5,
-                "max_discount_price": 0,
                 "birthday_discount_percent": 0,
-                "max_birthday_price": 0
+                "can_redeem_mileage": true,
+                "discount_percent": 0,
+                "max_birthday_price": 0,
+                "max_mileage_percent": 50,
+                "mileage": 761,
+                "min_redeem_points": 100
+            },
+            "brandCode": "EE",
+            "cardType": "diamondCard",
+            "grade": 2,
+            "id": 1065586,
+            "mileage": {
+                "currentPoints": 761,
+                "totalEarnPoints": 1988,
+                "totalRedeemPoints": 1227,
+                "totalSaleAmount": 55622.54
+            },
+            "mobile": "13818448893",
+            "no": "0000053147",
+            "profile": {
+                "address": "青浦城东新村44号504",
+                "addressDetail": "",
+                "birthday": "1974-04-11",
+                "email": "",
+                "gender": "F",
+                "married": true,
+                "name": "李萍"
             }
         },
         "mileage": {
-            "current": 78,
-            "available": 78,
-            "use": 78
+            "available": 597,
+            "current": 761,
+            "use": 0
         },
         "couponInfo": {
             "no": "EEB5AA500E8539665E",
             "title": "多级折扣型",
             "desc": "多级折扣型",
             "startAt": "2017-05-02T16:00:00Z",
-            "endAt": "2017-06-01T15:59:59Z",
             "enable": true,
             "couponType": "Discount",
             "eventId": "EE2017050013",
-            "offerName": "多级折扣型"
+            "offerName": "多级折扣型",
+            "endAt": "2017-06-01T15:59:59Z"
         },
         "info": {
-            "receipt": "483017401830101"
+            "receipt": "29474594502101"
         },
         "payments": [
             {
-                "method": "ALIPAY",
-                "amount": 50
+                "amount": 50,
+                "method": "CREDITCARD"
             },
             {
-                "method": "WXPAY",
-                "amount": 350
-            },
-            {
-                "method": "CASH",
-                "amount": 1000
+                "amount": 50,
+                "method": "WXPAY"
             }
         ],
         "items": [
             {
-                "id": "4638",
+                "id": "247",
+                "unitSalePrice": 199,
+                "quantity": 2,
+                "salePrice": 398,
+                "listPrice": 796,
+                "discount": 398,
+                "cartOffers": null,
+                "catalogOffer": {
+                    "id": 11842,
+                    "name": "16年5折"
+                },
+                "offer": {                             // DEPRECATED
+                    "channelId": 1218,                 // DEPRECATED
+                    "channelName": "杭州奥特莱斯下沙店",    // DEPRECATED
+                    "code": "S2142926",                // DEPRECATED
+                    "id": 11842,                       // DEPRECATED
+                    "name": "16年5折",                  // DEPRECATED
+                    "requirement": {},                 // DEPRECATED
+                    "salePrice": 199,                  // DEPRECATED
+                    "startAt": "2017-06-02T00:00:00Z", // DEPRECATED
+                    "endAt": "2017-10-31T00:00:00Z"    // DEPRECATED
+                },
                 "sku": {
-                    "id": 184184,
-                    "contentId": 21673,
-                    "name": "EEYC64T51M, (62)Hunter, (160)160",
-                    "code": "EEYC64T51M62160",
-                    "images": null,
+                    "attributes": [
+                        {
+                            "k": "ItemCode",
+                            "v": "AK"
+                        },
+                        {
+                            "k": "Year",
+                            "v": "2016"
+                        },
+                        {
+                            "k": "SeasonCode",
+                            "v": "8"
+                        },
+                        {
+                            "k": "SaleMonth",
+                            "v": "C"
+                        },
+                        {
+                            "k": "ContentTypeCode",
+                            "v": "P"
+                        }
+                    ],
+                    "brandCode": "EA",
+                    "brandId": 3,
+                    "code": "EAAK68C01N16FRE",
+                    "contentCode": "EAAK68C01N",
+                    "contentId": 23937,
+                    "id": 190264,
+                    "listPrice": 398,
+                    "name": "EAAK68C01N, (16)L/Grey, FREE",
+                    "offers": [
+                        {
+                            "id": 11808,
+                            "channelId": 1218,
+                            "channelName": "杭州奥特莱斯下沙店",
+                            "code": "S2085822",
+                            "name": "16年2件折0.8",
+                            "requirement": {},
+                            "salePrice": 159.2,
+                            "startAt": "2017-04-24T00:00:00Z",
+                            "endAt": "2017-07-31T00:00:00Z"
+                        },
+                        {
+                            "id": 11822,
+                            "channelId": 1218,
+                            "channelName": "杭州奥特莱斯下沙店",
+                            "code": "S2126643",
+                            "name": "16年3件折8",
+                            "requirement": {},
+                            "salePrice": 159.2,
+                            "startAt": "2017-05-22T00:00:00Z",
+                            "endAt": "2017-10-31T00:00:00Z"
+                        },
+                        {
+                            "id": 11842,
+                            "channelId": 1218,
+                            "channelName": "杭州奥特莱斯下沙店",
+                            "code": "S2142926",
+                            "name": "16年5折",
+                            "requirement": {},
+                            "salePrice": 199,
+                            "startAt": "2017-06-02T00:00:00Z",
+                            "endAt": "2017-10-31T00:00:00Z"
+                        }
+                    ],
                     "options": [
                         {
                             "k": "Size",
-                            "v": "(160)160"
+                            "v": "FREE"
                         },
                         {
                             "k": "Color",
-                            "v": "(62)Hunter"
-                        }
-                    ],
-                    "brandCode": "EE",
-                    "contentCode": "EEYC64T51M",
-                    "listPrice": 598,
-                    "offers": [
-                        {
-                            "id": 1952,
-                            "code": "C108097",
-                            "name": "百货店vip 9折",
-                            "salePrice": 538.2,
-                            "channelName": "北京汉光",
-                            "startAt": "2017-05-01T00:00:00Z",
-                            "endAt": "2017-06-02T00:00:00Z",
-                            "requirement": {}
+                            "v": "(16)L/Grey"
                         }
                     ]
-                },
-                "offer": {
-                    "id": 1952,
-                    "code": "C108097",
-                    "name": "百货店vip 9折",
-                    "salePrice": 538.2,
-                    "channelName": "北京汉光",
-                    "startAt": "2017-05-01T00:00:00Z",
-                    "endAt": "2017-06-02T00:00:00Z",
-                    "requirement": {}
-                },
-                "quantity": 2,
-                "listPrice": 1196,
-                "salePrice": 1076.4,
-                "discount": 119.6
+                }
             },
             {
-                "id": "4639",
+                "id": "248",
+                "unitSalePrice": 398,
+                "quantity": 2,
+                "salePrice": 796,
+                "listPrice": 796,
+                "discount": 0,
+                "cartOffers": null,
+                "catalogOffer": null,
+                "offer": null,               // DEPRECATED
                 "sku": {
-                    "id": 184184,
-                    "contentId": 21673,
-                    "name": "EEYC64T51M, (62)Hunter, (160)160",
-                    "code": "EEYC64T51M62160",
-                    "images": null,
+                    "id": 190264,
+                    "contentId": 23937,
+                    "brandId": 3,
+                    "name": "EAAK68C01N, (16)L/Grey, FREE",
+                    "code": "EAAK68C01N16FRE",
+                    "contentCode": "EAAK68C01N",
+                    "brandCode": "EA",
+                    "attributes": [
+                        {
+                            "k": "ItemCode",
+                            "v": "AK"
+                        },
+                        {
+                            "k": "Year",
+                            "v": "2016"
+                        },
+                        {
+                            "k": "SeasonCode",
+                            "v": "8"
+                        },
+                        {
+                            "k": "SaleMonth",
+                            "v": "C"
+                        },
+                        {
+                            "k": "ContentTypeCode",
+                            "v": "P"
+                        }
+                    ],
+                    "listPrice": 398,
+                    "offers": [
+                        {
+                            "id": 11808,
+                            "channelId": 1218,
+                            "channelName": "杭州奥特莱斯下沙店",
+                            "code": "S2085822",
+                            "name": "16年2件折0.8",
+                            "requirement": {},
+                            "salePrice": 159.2,
+                            "startAt": "2017-04-24T00:00:00Z",
+                            "endAt": "2017-07-31T00:00:00Z"
+                        },
+                        {
+                            "id": 11822,
+                            "channelId": 1218,
+                            "channelName": "杭州奥特莱斯下沙店",
+                            "code": "S2126643",
+                            "name": "16年3件折8",
+                            "requirement": {},
+                            "salePrice": 159.2,
+                            "startAt": "2017-05-22T00:00:00Z",
+                            "endAt": "2017-10-31T00:00:00Z"
+                        },
+                        {
+                            "id": 11842,
+                            "channelId": 1218,
+                            "channelName": "杭州奥特莱斯下沙店",
+                            "code": "S2142926",
+                            "name": "16年5折",
+                            "requirement": {},
+                            "salePrice": 199,
+                            "startAt": "2017-06-02T00:00:00Z",
+                            "endAt": "2017-10-31T00:00:00Z"
+                        }
+                    ],
                     "options": [
                         {
                             "k": "Size",
-                            "v": "(160)160"
+                            "v": "FREE"
                         },
                         {
                             "k": "Color",
-                            "v": "(62)Hunter"
-                        }
-                    ],
-                    "brandCode": "EE",
-                    "contentCode": "EEYC64T51M",
-                    "listPrice": 598,
-                    "offers": [
-                        {
-                            "id": 1952,
-                            "code": "C108097",
-                            "name": "百货店vip 9折",
-                            "salePrice": 538.2,
-                            "channelName": "北京汉光",
-                            "startAt": "2017-05-01T00:00:00Z",
-                            "endAt": "2017-06-02T00:00:00Z",
-                            "requirement": {}
+                            "v": "(16)L/Grey"
                         }
                     ]
-                },
-                "offer": null,
-                "quantity": 2,
-                "listPrice": 1196,
-                "salePrice": 717.6,
-                "discount": 478.4
-            },
-            {
-                "id": "4640",
-                "sku": {
-                    "id": 186184,
-                    "contentId": 24108,
-                    "name": "EETJ72403A, (52)D/Blue, (165)165",
-                    "code": "EETJ72403A52165",
-                    "images": null,
-                    "options": [
-                        {
-                            "k": "Size",
-                            "v": "(165)165"
-                        },
-                        {
-                            "k": "Color",
-                            "v": "(52)D/Blue"
-                        }
-                    ],
-                    "brandCode": "EE",
-                    "contentCode": "EETJ72403A",
-                    "listPrice": 598,
-                    "offers": [
-                        {
-                            "id": 1952,
-                            "code": "C108097",
-                            "name": "百货店vip 9折",
-                            "salePrice": 538.2,
-                            "channelName": "北京汉光",
-                            "startAt": "2017-05-01T00:00:00Z",
-                            "endAt": "2017-06-02T00:00:00Z",
-                            "requirement": {
-                                "customerGroup": "VIP"
-                            }
-                        }
-                    ]
-                },
-                "offer": null,
-                "quantity": 2,
-                "listPrice": 1196,
-                "salePrice": 717.6,
-                "discount": 478.4
+                }
             }
         ],
+        "status": "created",
         "suggests": [
             {
                 "name": "EERA72505 Bundle Sale",
@@ -227,11 +303,8 @@ toc = true
                 ]
             }
         ],
-        "userId": 14,
-        "spotId": 26,
-        "salesmanId": 3149,
-        "createdAt": "2017-05-11T16:19:33Z",
-        "updatedAt": "2017-05-11T16:24:19.216021056Z"
+        "createdAt": "2017-07-20T11:07:20Z",
+        "updatedAt": "2017-07-20T11:07:21Z"
     },
     "success": true,
     "error": {}
