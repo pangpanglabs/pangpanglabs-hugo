@@ -24,210 +24,304 @@ toc = true
 Success:
 ```
 {
-    "id": "83",
-    "orderNo": "15005616990083",
-    "uid": "",
-    "quantity": 4,
-    "listPrice": 1592,
-    "salePrice": 1194,
-    "discount": 398,
+    "id": "10685",
+    "orderNo": "15028499890685",
+    "uid": "EE20170815140238",
+    "parentId": "0",
+    "quantity": 6,
+    "listPrice": 1638,
+    "salePrice": 1373.2,
+    "discount": 264.8,
     "items": [
         {
             "seq": 1,
             "sku": {
-                "id": 190264,
-                "name": "EAAK68C01N, (16)L/Grey, FREE",
-                "contentId": 23937,
-                "brandId": 3,
-                "code": "EAAK68C01N16FRE",
-                "contentCode": "EAAK68C01N",
-                "brandCode": "EA",
-                "listPrice": 398,
+                "id": 108235,
+                "name": "XXXXXS601D, (26)L/Pink, (FRE)FREE",
+                "contentId": 15664,
+                "brandId": 1,
+                "code": "XXXXXS601D26FRE",
+                "contentCode": "XXXXXS601D",
+                "brandCode": "EE",
+                "listPrice": 128,
                 "options": [
-                    { "k": "Size", "v": "FREE" },
-                    { "k": "Color", "v": "(16)L/Grey" }
+                    { "k": "Size", "v": "(FRE)FREE" },
+                    { "k": "Color", "v": "(26)L/Pink" }
                 ],
                 "attributes": [
-                    { "k": "ItemCode", "v": "AK" },
-                    { "k": "Year", "v": "2016" },
-                    { "k": "SeasonCode", "v": "8" },
-                    { "k": "SaleMonth", "v": "C" },
+                    { "k": "ItemCode", "v": "AB" },
+                    { "k": "Year", "v": "2017" },
+                    { "k": "SeasonCode", "v": "S" },
+                    { "k": "SaleMonth", "v": "6" },
                     { "k": "ContentTypeCode", "v": "P" }
-                ],
-                "offers": [
-                    {
-                        "id": 11808,
-                        "code": "S2085822",
-                        "name": "16年2件折0.8",
-                        "salePrice": 159.2,
-                        "channelId": 1218,
-                        "channelName": "杭州奥特莱斯下沙店",
-                        "startAt": "2017-04-24T00:00:00Z",
-                        "endAt": "2017-07-31T00:00:00Z",
-                        "fitAllContents": false,
-                        "requirement": {}
-                    },
-                    {
-                        "id": 11842,
-                        "code": "S2142926",
-                        "name": "16年5折",
-                        "salePrice": 199,
-                        "channelId": 1218,
-                        "channelName": "杭州奥特莱斯下沙店",
-                        "startAt": "2017-06-02T00:00:00Z",
-                        "endAt": "2017-10-31T00:00:00Z",
-                        "fitAllContents": false,
-                        "requirement": {}
-                    }
                 ]
             },
-            "offer": null,
-            "quantity": 2,
-            "listPrice": 796,
-            "salePrice": 796,
-            "discount": 0,
-            "catalogOffer": null,
+            "quantity": 1,
+            "listPrice": 128,
+            "salePrice": 115.2,
+            "discount": 12.8,
+            "catalogOffer": {
+                "id": 613,
+                "name": "vip(9)",
+                "code": "C000030",
+                "discount": 12.8
+            },
+            "wcsOffer": null,
             "cartOffers": null,
-            "unitSalePrice": 398,
+            "unitSalePrice": 115.2,
             "status": "closed"
         },
         {
             "seq": 2,
             "sku": {
-                "id": 190264,
-                "name": "EAAK68C01N, (16)L/Grey, FREE",
-                "contentId": 23937,
-                "brandId": 3,
-                "code": "EAAK68C01N16FRE",
-                "contentCode": "EAAK68C01N",
-                "brandCode": "EA",
-                "listPrice": 398,
+                "id": 108236,
+                "name": "XXXXXS601D, (NA)合并颜色, (ONA)合并尺寸",
+                "contentId": 15664,
+                "brandId": 1,
+                "code": "XXXXXS601DNAONA",
+                "contentCode": "XXXXXS601D",
+                "brandCode": "EE",
+                "listPrice": 128,
                 "options": [
-                    { "k": "Size", "v": "FREE" },
-                    { "k": "Color", "v": "(16)L/Grey" }
+                    { "k": "Size", "v": "(ONA)통합사이즈" },
+                    { "k": "Color", "v": "(NA)통합칼라" }
                 ],
                 "attributes": [
-                    { "k": "ItemCode", "v": "AK" },
-                    { "k": "Year", "v": "2016" },
-                    { "k": "SeasonCode", "v": "8" },
-                    { "k": "SaleMonth", "v": "C" },
+                    { "k": "ItemCode", "v": "AB" },
+                    { "k": "Year", "v": "2017" },
+                    { "k": "SeasonCode", "v": "S" },
+                    { "k": "SaleMonth", "v": "6" },
                     { "k": "ContentTypeCode", "v": "P" }
+                ]
+            },
+            "quantity": 1,
+            "listPrice": 128,
+            "salePrice": 115.2,
+            "discount": 12.8,
+            "catalogOffer": {
+                "id": 613,
+                "name": "vip(9)",
+                "code": "C000030",
+                "discount": 12.8
+            },
+            "wcsOffer": null,
+            "cartOffers": null,
+            "unitSalePrice": 115.2,
+            "status": "closed"
+        },
+        {
+            "seq": 3,
+            "sku": {
+                "id": 94688,
+                "name": "XXXXX401, XXX, XXX",
+                "contentId": 471,
+                "brandId": 1,
+                "code": "XXXXX401XXXXXX",
+                "contentCode": "XXXXX401",
+                "brandCode": "EE",
+                "listPrice": 378,
+                "options": [
+                    { "k": "Size", "v": "(XXX)N/A" },
+                    { "k": "Color", "v": "(XXX)N/A" }
                 ],
-                "offers": [
-                    {
-                        "id": 11808,
-                        "code": "S2085822",
-                        "name": "16年2件折0.8",
-                        "salePrice": 159.2,
-                        "channelId": 1218,
-                        "channelName": "杭州奥特莱斯下沙店",
-                        "startAt": "2017-04-24T00:00:00Z",
-                        "endAt": "2017-07-31T00:00:00Z",
-                        "fitAllContents": false,
-                        "requirement": {}
-                    },
-                    {
-                        "id": 11842,
-                        "code": "S2142926",
-                        "name": "16年5折",
-                        "salePrice": 199,
-                        "channelId": 1218,
-                        "channelName": "杭州奥特莱斯下沙店",
-                        "startAt": "2017-06-02T00:00:00Z",
-                        "endAt": "2017-10-31T00:00:00Z",
-                        "fitAllContents": false,
-                        "requirement": {}
-                    }
+                "attributes": [
+                    { "k": "ItemCode", "v": "AB" },
+                    { "k": "Year", "v": "2007" },
+                    { "k": "SeasonCode", "v": "2" },
+                    { "k": "SaleMonth", "v": "4" },
+                    { "k": "ContentTypeCode", "v": "P" }
                 ]
             },
             "quantity": 2,
-            "listPrice": 796,
-            "salePrice": 398,
-            "discount": 398,
-            "catalogOffer": {
-                "id": 11842,
-                "name": "16年5折",
-                "code": "S2142926"
+            "listPrice": 756,
+            "salePrice": 604.8,
+            "discount": 151.2,
+            "catalogOffer": null,
+            "wcsOffer": {
+                "id": 0,
+                "name": "POS3.0使用_8折券",
+                "code": "EE2017050023",
+                "couponNo": "EEXXXXXXXXXX",
+                "discount": 151.2
             },
             "cartOffers": null,
-            "unitSalePrice": 199,
+            "unitSalePrice": 302.4,
+            "status": "closed"
+        },
+        {
+            "seq": 4,
+            "sku": {
+                "id": 94686,
+                "name": "XXXXX401, 281, XXX",
+                "contentId": 471,
+                "brandId": 1,
+                "code": "XXXXX401281XXX",
+                "contentCode": "XXXXX401",
+                "brandCode": "EE",
+                "listPrice": 378,
+                "options": [
+                    { "k": "Size", "v": "(XXX)N/A" },
+                    { "k": "Color", "v": "(281)brown" }
+                ],
+                "attributes": [
+                    { "k": "ItemCode", "v": "AB" },
+                    { "k": "Year", "v": "2007" },
+                    { "k": "SeasonCode", "v": "2" },
+                    { "k": "SaleMonth", "v": "4" },
+                    { "k": "ContentTypeCode", "v": "P" }
+                ]
+            },
+            "quantity": 1,
+            "listPrice": 378,
+            "salePrice": 302.4,
+            "discount": 75.6,
+            "catalogOffer": null,
+            "wcsOffer": {
+                "id": 0,
+                "name": "POS3.0使用_8折券",
+                "code": "EE2017050023",
+                "discount": 75.6
+            },
+            "cartOffers": null,
+            "unitSalePrice": 302.4,
+            "status": "closed"
+        },
+        {
+            "seq": 5,
+            "sku": {
+                "id": 1944,
+                "name": "XXXXX102, 781, 000",
+                "contentId": 463,
+                "brandId": 1,
+                "code": "XXXXX102781000",
+                "contentCode": "XXXXX102",
+                "brandCode": "EE",
+                "listPrice": 248,
+                "options": [
+                    { "k": "Size", "v": "(000)生产代表尺寸" },
+                    { "k": "Color", "v": "(781)navy" }
+                ],
+                "attributes": [
+                    { "k": "ItemCode", "v": "AB" },
+                    { "k": "Year", "v": "2007" },
+                    { "k": "SeasonCode", "v": "1" },
+                    { "k": "SaleMonth", "v": "1" },
+                    { "k": "ContentTypeCode", "v": "P" }
+                ]
+            },
+            "quantity": 1,
+            "listPrice": 248,
+            "salePrice": 235.6,
+            "discount": 12.4,
+            "catalogOffer": {
+                "id": 612,
+                "name": "vip(9.5)",
+                "code": "C000029",
+                "discount": 12.4
+            },
+            "wcsOffer": null,
+            "cartOffers": null,
+            "unitSalePrice": 235.6,
             "status": "closed"
         }
     ],
-    "customerId": 1065586,
-    "couponNo": "",
+    "customerId": 1065576,
+    "couponNo": "EEXXXXXXXXXX",
     "couponInfo": {
-        "no": "",
-        "title": "",
-        "desc": "",
-        "startAt": "0001-01-01T00:00:00Z",
-        "endAt": "0001-01-01T00:00:00Z",
-        "enable": false,
-        "couponType": "",
-        "eventId": "",
-        "offerName": ""
+        "no": "EEXXXXXXXXXX",
+        "title": "POS3.0使用_8折券",
+        "desc": "POS3.0使用_8折券",
+        "startAt": "2017-05-14T16:00:00Z",
+        "endAt": "2017-09-30T15:59:59Z",
+        "enable": true,
+        "couponType": "Discount",
+        "eventId": "EEXXXXXXXX",
+        "offerName": "POS3.0使用_8折券"
     },
     "customerInfo": {
-        "id": 1065586,
-        "no": "0000053147",
+        "id": 1065576,
+        "no": "0000211453",
         "brandCode": "EE",
-        "mobile": "13818448893",
-        "grade": 2,
+        "mobile": "13900001234",
+        "grade": 1,
         "cardType": "diamondCard",
         "mileage": {
-            "currentPoints": 761,
-            "totalEarnPoints": 1988,
-            "totalRedeemPoints": 1227,
-            "totalSaleAmount": 55622.54
+            "currentPoints": 879,
+            "totalEarnPoints": 9497,
+            "totalRedeemPoints": 8684,
+            "totalSaleAmount": 211563.77
         },
         "benefit": {
             "can_redeem_mileage": true,
             "min_redeem_points": 100,
-            "mileage": 761,
+            "mileage": 879,
             "max_mileage_percent": 50,
             "discount_percent": 0,
             "birthday_discount_percent": 0,
             "max_birthday_price": 0
         },
         "profile": {
-            "name": "李萍",
+            "name": "名字",
             "gender": "F",
-            "birthday": "1974-04-11",
-            "email": "",
-            "married": true,
-            "address": "青浦城东新村44号504",
-            "addressDetail": ""
+            "birthday": "1986-09-29",
+            "email": "email@p2shop.cn",
+            "married": false,
+            "address": "北京XXXXXXXX",
+            "addressDetail": "XXXXXXXX"
         }
     },
     "mileage": {
-        "current": 761,
-        "available": 597,
-        "use": 0
+        "current": 879,
+        "available": 686,
+        "use": 100
     },
-    "info": {
-        "receipt": "29474594502101"
-    },
+    "info": null,
     "payments": [
-        { "method": "CREDITCARD", "amount": 50 },
-        { "method": "WXPAY", "amount": 50 }
+        { "seq": 1, "method": "alipay", "amount": 1000 },
+        { "seq": 2, "method": "wxpay", "amount": 200 },
+        { "seq": 3, "method": "creditcard", "amount": 50 },
+        { "seq": 4, "method": "cash", "amount": 23.2 }
     ],
     "catalogOffers": [
         {
-            "id": 11842,
-            "name": "16年5折",
-            "code": "S2142926"
+            "id": 613,
+            "name": "vip(9)",
+            "code": "C000030",
+            "discount": 153.6
+        },
+        {
+            "id": 612,
+            "name": "vip(9.5)",
+            "code": "C000029",
+            "discount": 74.4
         }
     ],
     "cartOffers": null,
-    "userId": 55,
-    "salesmanId": 55,
+    "wcsOffer": {
+        "name": "POS3.0使用_8折券",
+        "code": "EE2017050023",
+        "couponNo": "EEXXXXXXXXXX",
+        "discount": 226.8
+    },
+    "userId": 171,
+    "salesmanId": 174,
     "deviceId": "",
-    "spotId": 13,
+    "spotId": 12,
     "tenantId": 2,
-    "channelId": 1218,
-    "createdAt": "2017-07-20T14:41:39.371326956Z",
-    "updatedAt": "2017-07-20T14:41:39.375963521Z",
-    "status": "created" // "created", "canceled", "returned"
+    "channelId": 413,
+    "createdAt": "2017-08-16T02:19:49.328005471Z",
+    "status": "created",
+    "spot": {
+        "code": "EE-C30X",
+        "name": "EE 杭州银泰",
+        "shopInfo": [
+            {
+                "brandCode": "EE",
+                "isChief": false,
+                "shopCode": "C30X"
+            }
+        ]
+    }
 }
 ```
 
