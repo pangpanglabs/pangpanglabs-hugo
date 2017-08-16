@@ -383,6 +383,30 @@ Success:
 }
 ```
 
+## Edit Payment
+
+`/order/edit-payment`
+
+####  Parameters
+
+
+|Name|Required|Type|Desc|
+|---|---|---|
+|orderId|Yes|string|
+|seq|Yes|integer|payment seq|
+|transNo|No|string|-|
+|returnTransNo|No|string|-|
+|referenceNo|No|string|-|
+|terminalId|No|string|-|
+|creditCardNo|No|string|-|
+|creditCardCode|No|string|-|
+|couponNo|No|string|-|
+|couponType|No|string|-|
+
+#### Example
+
+`pp://staging//order/edit-payment?orderId=132&seq=1&transNo=xxxxxxxx&terminalId=xxxxxxxx`
+
 ## Return order
 
 `/order/return`
