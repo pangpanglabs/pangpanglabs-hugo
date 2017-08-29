@@ -391,7 +391,7 @@ Success:
 
 
 |Name|Required|Type|Desc|
-|---|---|---|
+|---|---|---|---|
 |orderId|Yes|string|
 |seq|Yes|integer|payment seq|
 |transNo|No|string|-|

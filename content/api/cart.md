@@ -11,7 +11,7 @@ toc = true
     "result": {
         "id": "10685",
         "userId": 171,
-        "salesmanId": 174,    
+        "salesmanId": 174,
         "spotId": 12,
         "tenantId": 2,
         "channelId": 413,
@@ -250,7 +250,17 @@ toc = true
                 "married": false,
                 "address": "北京XXXXXXXX",
                 "addressDetail": "XXXXXXXX"
-            }
+            },
+            "availableCoupons": [
+                {
+                    "couponNo": "EEXXXXXXXXXX",
+                    "title": "10% Discount!",
+                    "description": "description",
+                    "notice": "notice",
+                    "startDate": "2017-01-01T16:00:00Z",
+                    "endDate": "2017-12-31T16:00:00Z"
+                }
+            ]
         },
         "mileage": {
             "current": 879,
@@ -284,8 +294,8 @@ toc = true
             "code": "EE2017050023",
             "couponNo": "EEXXXXXXXXXX",
             "discount": 226.8
-        },    
-        "createdAt": "2017-08-16T02:19:49.328005471Z",    
+        },
+        "createdAt": "2017-08-16T02:19:49.328005471Z",
         "updatedAt": "2017-08-16T02:19:49.328005471Z",
         "status": "created"
     },
