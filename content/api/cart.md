@@ -9,19 +9,20 @@ toc = true
 ```
 {
     "result": {
-        "id": "10685",
+        "id": 10685,
         "userId": 171,
         "salesmanId": 174,
         "spotId": 12,
         "tenantId": 2,
         "channelId": 413,
         "quantity": 6,
-        "listPrice": 1638,
-        "salePrice": 1373.2,
-        "discount": 264.8,
+        "listPrice": 2302,
+        "salePrice": 1740.34,
+        "discount": 561.66,
+        "remainAmount": 1740.34,
         "items": [
             {
-                "id": "1",
+                "id": 1,
                 "sku": {
                     "id": 108235,
                     "name": "XXXXXS601D, (26)L/Pink, (FRE)FREE",
@@ -30,7 +31,7 @@ toc = true
                     "code": "XXXXXS601D26FRE",
                     "contentCode": "XXXXXS601D",
                     "brandCode": "EE",
-                    "listPrice": 128,
+                    "listPrice": 710,
                     "options": [
                         { "k": "Size", "v": "(FRE)FREE" },
                         { "k": "Color", "v": "(26)L/Pink" }
@@ -44,21 +45,53 @@ toc = true
                     ]
                 },
                 "quantity": 1,
-                "listPrice": 128,
-                "salePrice": 115.2,
-                "discount": 12.8,
+                "listPrice": 710,
+                "salePrice": 454.45,
+                "unitSalePrice": 115.2,
+                "discount": 255.55,
+                "discountRate": 35.99,
                 "catalogOffer": {
                     "id": 613,
                     "name": "vip(9)",
                     "code": "C000030",
-                    "discount": 12.8
+                    "discount": 12.8,
+                    "valid": true,
+                    "startAt": "2017-12-08T00:00:00+08:00",
+                    "endAt": "2019-12-27T23:59:59+08:00"
                 },
                 "wcsOffer": null,
-                "cartOffers": null,
-                "unitSalePrice": 115.2
+                "cartOffers": [
+                    {
+                        "code": "SXXX0123",
+                        "discount": 120.97,
+                        "id": 4282,
+                        "name": "全场满1000减200",
+                        "valid": true,
+                        "startAt": "2017-12-08T00:00:00+08:00",
+                        "endAt": "2019-12-27T23:59:59+08:00"
+                    },
+                    {
+                        "code": "SXXX0124",
+                        "discount": 72.58,
+                        "id": 4281,
+                        "name": "全场满800减120",
+                        "valid": true,
+                        "startAt": "2017-12-08T00:00:00+08:00",
+                        "endAt": "2019-12-27T23:59:59+08:00"
+                    },
+                    {
+                        "code": "S2215291",
+                        "discount": 50,
+                        "id": 2137,
+                        "name": "新增32款198-50",
+                        "valid": true,
+                        "startAt": "2017-12-08T00:00:00+08:00",
+                        "endAt": "2019-12-27T23:59:59+08:00"
+                    }
+                ]
             },
             {
-                "id": "2",
+                "id": 2,
                 "sku": {
                     "id": 108236,
                     "name": "XXXXXS601D, (NA)合并颜色, (ONA)合并尺寸",
@@ -67,7 +100,7 @@ toc = true
                     "code": "XXXXXS601DNAONA",
                     "contentCode": "XXXXXS601D",
                     "brandCode": "EE",
-                    "listPrice": 128,
+                    "listPrice": 210,
                     "options": [
                         { "k": "Size", "v": "(ONA)통합사이즈" },
                         { "k": "Color", "v": "(NA)통합칼라" }
@@ -81,21 +114,44 @@ toc = true
                     ]
                 },
                 "quantity": 1,
-                "listPrice": 128,
-                "salePrice": 115.2,
-                "discount": 12.8,
+                "listPrice": 210,
+                "salePrice": 143.09,
+                "unitSalePrice": 143.09,
+                "discount": 66.91,
+                "discountRate": 31.86,
                 "catalogOffer": {
                     "id": 613,
                     "name": "vip(9)",
                     "code": "C000030",
-                    "discount": 12.8
+                    "discount": 12.8,
+                    "valid": true,
+                    "startAt": "2017-12-08T00:00:00+08:00",
+                    "endAt": "2019-12-27T23:59:59+08:00"
                 },
                 "wcsOffer": null,
-                "cartOffers": null,
-                "unitSalePrice": 115.2
+                "cartOffers": [
+                    {
+                        "code": "SXXX0123",
+                        "discount": 34.32,
+                        "id": 4282,
+                        "name": "全场满1000减200",
+                        "valid": true,
+                        "startAt": "2017-12-08T00:00:00+08:00",
+                        "endAt": "2019-12-27T23:59:59+08:00"
+                    },
+                    {
+                        "code": "SXXX0124",
+                        "discount": 20.59,
+                        "id": 4281,
+                        "name": "全场满800减120",
+                        "valid": true,
+                        "startAt": "2017-12-08T00:00:00+08:00",
+                        "endAt": "2019-12-27T23:59:59+08:00"
+                    }
+                ]
             },
             {
-                "id": "3",
+                "id": 3,
                 "sku": {
                     "id": 94688,
                     "name": "XXXXX401, XXX, XXX",
@@ -120,7 +176,9 @@ toc = true
                 "quantity": 2,
                 "listPrice": 756,
                 "salePrice": 604.8,
-                "discount": 151.2,
+                "unitSalePrice": 302.4,
+                "discount": 151.20,
+                "discountRate": 20.00,
                 "catalogOffer": null,
                 "wcsOffer": {
                     "id": 0,
@@ -129,11 +187,10 @@ toc = true
                     "couponNo": "EEXXXXXXXXXX",
                     "discount": 151.2
                 },
-                "cartOffers": null,
-                "unitSalePrice": 302.4
+                "cartOffers": null
             },
             {
-                "id": "4",
+                "id": 4,
                 "sku": {
                     "id": 94686,
                     "name": "XXXXX401, 281, XXX",
@@ -158,7 +215,9 @@ toc = true
                 "quantity": 1,
                 "listPrice": 378,
                 "salePrice": 302.4,
+                "unitSalePrice": 302.4,
                 "discount": 75.6,
+                "discountRate": 20.00,
                 "catalogOffer": null,
                 "wcsOffer": {
                     "id": 0,
@@ -166,8 +225,7 @@ toc = true
                     "code": "EE2017050023",
                     "discount": 75.6
                 },
-                "cartOffers": null,
-                "unitSalePrice": 302.4
+                "cartOffers": null
             },
             {
                 "seq": 5,
@@ -195,16 +253,20 @@ toc = true
                 "quantity": 1,
                 "listPrice": 248,
                 "salePrice": 235.6,
+                "unitSalePrice": 235.6,
                 "discount": 12.4,
+                "discountRate": 5.00,
                 "catalogOffer": {
                     "id": 612,
                     "name": "vip(9.5)",
                     "code": "C000029",
-                    "discount": 12.4
+                    "discount": 12.4,
+                    "valid": true,
+                    "startAt": "2017-12-08T00:00:00+08:00",
+                    "endAt": "2019-12-27T23:59:59+08:00"
                 },
                 "wcsOffer": null,
-                "cartOffers": null,
-                "unitSalePrice": 235.6
+                "cartOffers": null
             }
         ],
         "customerId": 1065576,
@@ -279,16 +341,50 @@ toc = true
                 "id": 613,
                 "name": "vip(9)",
                 "code": "C000030",
-                "discount": 153.6
+                "discount": 153.6,
+                "valid": true,
+                "startAt": "2017-12-08T00:00:00+08:00",
+                "endAt": "2019-12-27T23:59:59+08:00"
             },
             {
                 "id": 612,
                 "name": "vip(9.5)",
                 "code": "C000029",
-                "discount": 74.4
+                "discount": 74.4,
+                "valid": true,
+                "startAt": "2017-12-08T00:00:00+08:00",
+                "endAt": "2019-12-27T23:59:59+08:00"
             }
         ],
-        "cartOffers": null,
+        "cartOffers": [
+            {
+                "code": "SXXX0123",
+                "discount": 200,
+                "id": 4282,
+                "name": "全场满1000减200",
+                "valid": true,
+                "startAt": "2017-12-08T00:00:00+08:00",
+                "endAt": "2019-12-27T23:59:59+08:00"
+            },
+            {
+                "code": "SXXX0124",
+                "discount": 120,
+                "id": 4281,
+                "name": "全场满800减120",
+                "valid": true,
+                "startAt": "2017-12-08T00:00:00+08:00",
+                "endAt": "2019-12-27T23:59:59+08:00"
+            },
+            {
+                "code": "S2215291",
+                "discount": 50,
+                "id": 2137,
+                "name": "新增32款198-50",
+                "valid": true,
+                "startAt": "2017-12-08T00:00:00+08:00",
+                "endAt": "2019-12-27T23:59:59+08:00"
+            }
+        ],
         "wcsOffer": {
             "name": "POS3.0使用_8折券",
             "code": "EE2017050023",
@@ -327,7 +423,7 @@ None
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|string|
+|cartId|Yes|number|
 |skuId|Yes|number|
 |quantity|Yes|number|
 |offerId|No|number|
@@ -348,14 +444,12 @@ None
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|string|
-|skuId|Yes|number|
-|quantity|Yes|number|
-|offerId|No|number|
+|cartId|Yes|number|
+|itemId|Yes|number|
 
 #### Example
 
-`pp://staging/cart/remove-item?cartId=1349&skuId=184184&quantity=1&offerId=8`
+`pp://staging/cart/remove-item?cartId=1349&itemId=5`
 
 ---
 
@@ -365,15 +459,17 @@ None
 
 #### Parameters
 
-|Name|Required|Type|
-|---|---|---|
-|cartId|Yes|string|
-|itemId|Yes|string|
-|offerId|Yes|number|
+|Name|Required|Type|Desc|
+|---|---|---|---|
+|cartId|Yes|number| |
+|itemId|Yes|number| |
+|offerId|No|number| |
+|quantity|No|number| |
+|offerType|No|string|`Catalog|Cart`(default: `Catalog`)|
 
 #### Example
 
-`pp://staging/cart/edit-item?cartId=1349&itemId=4638&offerId=0`
+`pp://staging/cart/edit-item?cartId=1349&itemId=4638&offerId=1`
 
 ---
 
@@ -385,14 +481,14 @@ None
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|string|
+|cartId|Yes|number|
 |no|Yes|string|
 
 Or
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|string|
+|cartId|Yes|number|
 |brandCode|Yes|string|
 |mobile|Yes|string|
 
@@ -407,14 +503,14 @@ Or
 
 ## Set coupon
 
- 
+
 `/cart/set-coupon`
 
 #### Parameters
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|string|
+|cartId|Yes|number|
 |no|Yes|string|
 
 #### Example
@@ -424,14 +520,14 @@ Or
 
 
 ## Set info
- 
+
 `/cart/set-info`
 
 #### Parameters
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|string|
+|cartId|Yes|number|
 |`key`|Yes|string|
 
 #### Example
@@ -447,7 +543,7 @@ Or
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|string|
+|cartId|Yes|number|
 |amount|Yes|number|
 
 #### Example
@@ -457,14 +553,14 @@ Or
 
 ## Set payment
 
- 
+
 `/cart/set-payment`
 
 #### Parameters
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|string|
+|cartId|Yes|number|
 |method|Yes|string|
 |amount|Yes|number|
 
@@ -480,7 +576,7 @@ Or
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|string|
+|cartId|Yes|number|
 
 #### Example
 
@@ -514,7 +610,7 @@ None
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|string|
+|cartId|Yes|number|
 
 #### Example
 
@@ -523,14 +619,14 @@ None
 
 ## Set salesman
 
- 
+
 `/cart/set-salesman`
 
 #### Parameters
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|string|
+|cartId|Yes|number|
 |salesmanId|Yes|number|
 
 #### Example
@@ -539,14 +635,14 @@ None
 
 ## Clear cart
 
- 
+
 `/cart/clear-cart`
 
 #### Parameters
 
 |Name|Required|Type|
 |---|---|---|
-|cartId|Yes|string|
+|cartId|Yes|number|
 
 #### Example
 

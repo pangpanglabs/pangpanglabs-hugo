@@ -14,7 +14,7 @@ PosSDK use local database. When initializing, you have to send the path where th
 
 #### Android
 
-1. For using network, Android require extra permissions.  
+1. For using network, Android require extra permissions.
   Set Permission in `AndroidManifest.xml` file
 ```
 <uses-permission android:name="android.permission.INTERNET" />
@@ -25,7 +25,7 @@ PosSDK use local database. When initializing, you have to send the path where th
 import cn.p2shop.pos.Pos;
 ```
 
-3. Init 
+3. Init
 ```
 String path;
 if (android.os.Build.VERSION.SDK_INT >=android.os.Build.VERSION_CODES.LOLLIPOP){
