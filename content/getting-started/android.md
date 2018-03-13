@@ -13,7 +13,7 @@ weight = 1
 import cn.p2shop.pos.Pos;
 ```
 
-3. Init 
+3. Init
 ```
 String path;
 if (android.os.Build.VERSION.SDK_INT >=android.os.Build.VERSION_CODES.LOLLIPOP){
@@ -32,15 +32,15 @@ String result = Pos.call("pp://staging/account/login?tenant=LABS&username=salesm
 > ### Setting
 >
 > #### Download
->  - Current(v0.1.1)
->  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.2/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
+>  - Current(v0.1.3)
+>  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.3/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
 
 >  - Archived versions
 >  {{% button href="https://pangpanglabs.github.io/introduction/#archived-versions" icon="fa fa-external-link" %}}click{{% /button %}}
 >
 > #### In Project Structure
-> 
-> 1. click `+` 
+>
+> 1. click `+`
 > 2. select `import .JAR/.AAR Package`
 > 3. click `Next`
 > 4. select `pos.aar` file

@@ -44,8 +44,8 @@ NSString* result = P2PosCall(@"pp://staging/account/login?tenant=LABS&username=s
 > ### Setting
 >
 > #### Download
->  - Current(v0.1.2)
->  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.2/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
+>  - Current(v0.1.3)
+>  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.3/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
 
 >  - Archived versions
 >  {{% button href="https://pangpanglabs.github.io/introduction/#archived-versions" icon="fa fa-external-link" %}}click{{% /button %}}
@@ -54,6 +54,6 @@ NSString* result = P2PosCall(@"pp://staging/account/login?tenant=LABS&username=s
 >
 > 1. Extract `Pos.framework.zip` file.
 > 2. Drag and Drop `Pos.framework` to Xcode project.
-> 3. in `Project`->`Target`->`Build Settings`  
->    - Search `Enable Bitcode`  
+> 3. in `Project`->`Target`->`Build Settings`
+>    - Search `Enable Bitcode`
 >    - set `NO`
