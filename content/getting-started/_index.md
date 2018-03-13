@@ -1,7 +1,7 @@
 +++
 title = "Getting Started"
-weight = 0
-icon = "<b>2. </b>"
+weight = 2
+pre = "<b>2. </b>"
 +++
 
 - [Android](/getting-started/android/)

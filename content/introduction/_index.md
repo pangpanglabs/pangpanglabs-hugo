@@ -1,8 +1,8 @@
 +++
 title = "Introduction"
 chapter = true
-weight = 0
-icon = "<b>1. </b>"
+weight = 1
+pre = "<b>1. </b>"
 +++
 
 # Start A Business For Free

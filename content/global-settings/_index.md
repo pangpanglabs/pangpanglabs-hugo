@@ -1,8 +1,9 @@
 +++
 title = "Global Settings"
 weight = 0
-icon = "<b>6. </b>"
+pre = "<b>6. </b>"
 toc = true
+draft = true
 +++
 
 

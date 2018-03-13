@@ -1,7 +1,7 @@
 +++
 title = "Error Code Description"
-weight = 0
-icon = "<b>5. </b>"
+weight = 5
+pre = "<b>5. </b>"
 toc = true
 +++
 
