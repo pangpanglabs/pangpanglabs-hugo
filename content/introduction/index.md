@@ -7,8 +7,8 @@ icon = "<b>1. </b>"
 
 # Start A Business For Free
 
-**Available on iOS and Android devices**  
-**Cloud-based**  
+**Available on iOS and Android devices**
+**Cloud-based**
 **Work offline**
 
 ![PangPang POS](/images/pos.png)
@@ -29,24 +29,33 @@ icon = "<b>1. </b>"
 
 ## Downloads
 
-### Current(v0.1.2)
+### Current(v0.1.3)
 
-This release fixes issue parsing error   
+This release changes backend domain address.
+
+- Android SDK
+  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.3/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
+- iOS SDK
+  {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.3/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
+
+### v0.1.2
+
+This release fixes issue parsing error
 and adds `/cart/clear-cart` API.
 
 
-- Android SDK  
+- Android SDK
   {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.2/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
-- iOS SDK  
+- iOS SDK
   {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.2/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
 
 ### v0.1.1
 
 This release adds graceful error handling.
 
-- Android SDK  
+- Android SDK
   {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.1/pos.aar" icon="fa fa-cloud-download" %}}pos.aar{{% /button %}}
-- iOS SDK  
+- iOS SDK
   {{% button href="http://possdk.oss-cn-hangzhou.aliyuncs.com/0.1.1/Pos.framework.zip" icon="fa fa-cloud-download" %}}Pos.framework.zip{{% /button %}}
 
 
@@ -66,45 +75,45 @@ This release adds graceful error handling.
 
 <!--### Inventory management
 
-- **Items import**  
-  Quickly add thousands of items using the CSV-spreadsheets.  
+- **Items import**
+  Quickly add thousands of items using the CSV-spreadsheets.
   Or use your own ETL tool.
-- **Track Inventory**  
+- **Track Inventory**
   Track the stock of products and their components.
-- **Low stock notifications**  
+- **Low stock notifications**
   Receive daily notifications about low stock to make the necessary item orders in time.
 
 ### Employee management
 
-- **Sales by employees**  
+- **Sales by employees**
   Track each employee performance and take informed business decisions.
-- **Smart management**  
+- **Smart management**
   Information on the workload per hour allows for efficient managament of your staff.
-- **Access rights**  
+- **Access rights**
   Manage access to sensitive information and functions.
 
 ### Sales analytics
 
-- **Sales trend**  
+- **Sales trend**
   Track the sales growth or decline compared with the previous day, week, month and promptly react to changes.
-- **Popular items**  
+- **Popular items**
   Sales by item analytics allows the best-selling items to be determined and therefore the right purchasing decisions can be made.
-- **Shifts**  
+- **Shifts**
   Identify the cash lack at the end of the shift and track employees inaccuracy or manipulations.
-- **Receipts history**  
+- **Receipts history**
   Receipts history review allows you to monitor each transaction: sales, refunds, discounts.
-- **Reports export**  
+- **Reports export**
   Export sales data to the spreadsheets for detailed analysis.
 
 ---
 
-- Discounts  
+- Discounts
   Apply discounts to the receipt or specific items.
-- Refunds  
+- Refunds
   Refund the selected item or all items on the receipt.
 - Multi Store
 - Products management
-  - 
+  -
 - Customer management
 - Inventory management
 - Employee management
